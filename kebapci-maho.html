@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8">
+    <style>
+
+
+        .bas {
+            color: rgb(41, 22, 13);
+            background-color: rgb(249, 250, 235);
+            font-weight: bold;
+        }
+
+        .ingr {
+            color: rgb(168, 144, 128);
+        }
+
+        .tabbas {
+            background-color: rgb(235, 226, 227);
+        }
+
+        #art {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kebabist Maho's Recipe Book</h1>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG" width="400">
+    <p id="art"><em>The Place That <strong>Meat Meets Art</strong></em></p>
+    <h2>Contents:</h2>
+
+
+    <ol>
+        <p> Jump to:</p>
+        <li><a href="#soup">Soup</a></li>
+        <li><a href="#chicken">Chicken</a></li>
+        <li><a href="#meat">Meat</a></li>
+        <li><a href="#soft-drink">Soft Drink</a></li>
+        <li><a href="#dessert">Dessert</a></li>
+    </ol>
+
+
+    <ul>
+        <li>Time:</li>
+        <ul>
+            <li>15 minutes for chicken</li>
+            <li>20 minutes for meat</li>
+            <li>10 minutes for desserts, <em>excluding kunefe</em></li>
+            <li>20 minutes for kunefe</li>
+        </ul>
+
+    </ul><br>
+
+
+    <h3 class="bas" id="soup">Soup</h3>
+    <table>
+        <thead class="tabbas">
+            <tr>
+                <th>Name</th>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Wedding_soup.jpg/250px-Wedding_soup.jpg" height="50"></th>
+            </tr>
+        </thead>
+        <tbody>
+        <th>Tomato Soup</th>
+        <td class="ingr">tomato</td>
+        <td>1 cup</td>
+        <td>€2.5</td>
+        </tbody>
+        <tbody>
+        <th>Mushroom Soup</th>
+        <td class="ingr">mushroom, garlic</td>
+        <td>1 cup</td>
+        <td>€2.75</td>
+        </tbody>
+        <tbody>
+        <th>Broccoli Soup</th>
+        <td class="ingr">broccoli</td>
+        <td>1 cup</td>
+        <td>€2</td>
+        </tbody>
+        <tbody>
+        <th>Onion Soup</th>
+        <td class="ingr">onion, flour</td>
+        <td>1 cup</td>
+        <td>€1.25</td>
+        </tbody>
+    </table>
+
+    <h3 class="bas" id="chicken">Chicken</h3>
+    <table>
+        <thead class="tabbas">
+            <tr>
+                <th>Name</th>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Soy_Sauce_Chicken.jpg/250px-Soy_Sauce_Chicken.jpg" height="50"></th>
+            </tr>
+        </thead>
+        <tbody>
+        <th>Chicken Sis</th>
+        <td class="ingr">chicken, tyme</td>
+        <td>125 gr</td>
+        <td>€4.5</td>
+        </tbody>
+        <tbody>
+        <th>Chick Tigh</th>
+        <td class="ingr">chick, garlic, pommes</td>
+        <td>4 pcs</td>
+        <td>€5.25</td>
+        </tbody>
+        <tbody>
+        <th>Baked Chicken</th>
+        <td class="ingr">cicken, tomato</td>
+        <td>200 gr</td>
+        <td>€4.75</td>
+        </tbody>
+    </table>
+
+    <h3 class="bas" id="meat">Meat</h3>
+    <table>
+        <thead class="tabbas">
+            <tr>
+                <th>Name</th>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/MeatloafWithSauce.jpg/300px-MeatloafWithSauce.jpg" height="50"></th>
+            </tr>
+        </thead>
+        <tbody>
+        <th>Cow Sis</th>
+        <td class="ingr">meat, yoghurt</td>
+        <td>175 gr</td>
+        <td>€3.75</td>
+        </tbody>
+        <tbody>
+        <th>Cow Tongue</th>
+        <td class="ingr">tongue, pommes</td>
+        <td>3 pcs</td>
+        <td>€5</td>
+        </tbody>
+        <tbody>
+        <th>Adana Kebab</th>
+        <td class="ingr">meat, salad</td>
+        <td>150 gr</td>
+        <td>€3.5</td>
+        </tbody>
+        <tbody>
+        <th>Urfa Kebab</th>
+        <td class="ingr">meat, hot pepper</td>
+        <td>150 gr</td>
+        <td>€3.5</td>
+        </tbody>
+        <tbody>
+        <th>Turkish Pizza</th>
+        <td class="ingr">meat, lavash, lemon</td>
+        <td>2 pcs</td>
+        <td>€2.5</td>
+        </tbody>
+    </table>
+    <h3 class="bas" id="soft-drink">Soft Drink</h3>
+    <table>
+        <thead class="tabbas">
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dr_Browns_line_12oz.jpg/220px-Dr_Browns_line_12oz.jpg" height="50"></th>
+            </tr>
+        </thead>
+        <tbody>
+        <th>Apple/Orange Juice</th>
+        <td>200 ml</td>
+        <td>€0.75</td>
+        </tbody>
+        <tbody>
+        <th>Cherry/Appricot Juice</th>
+        <td>200 ml</td>
+        <td>€1</td>
+        </tbody>
+        <tbody>
+        <th>Ice Tea</th>
+        <td>230 ml</td>
+        <td>€1.25</td>
+        </tbody>
+        <tbody>
+        <th>Coca Cola</th>
+        <td>230 ml</td>
+        <td>€1.5</td>
+        </tbody>
+        <tbody>
+        <th>Sprite</th>
+        <td>230 ml</td>
+        <td>€1.5</td>
+        </tbody>
+        <tbody>
+        <th>Fanta</th>
+        <td>230 ml</td>
+        <td>€1.25</td>
+        </tbody>
+        <tbody>
+        <th>Ayran</th>
+        <td>250 ml</td>
+        <td>€0.75</td>
+        </tbody>
+        <tbody>
+        <th>Water</th>
+        <td>250 ml</td>
+        <td>€0.75</td>
+        </tbody>
+        <tbody>
+        <th>Water</th>
+        <td>1.5 l</td>
+        <td>€1.5</td>
+        </tbody>
+    </table>
+    <h3 class="bas" id="dessert">Dessert</h3>
+    <table>
+        <thead class="tabbas">
+            <tr>
+                <th>Name</th>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Baklava_-_Turkish_special%2C_80-ply.JPEG/250px-Baklava_-_Turkish_special%2C_80-ply.JPEG" height="50"></th>
+            </tr>
+        </thead>
+        <tbody>
+        <th>Kunefe</th>
+        <td class="ingr">kadayif, pistachio nut</td>
+        <td>300 gr</td>
+        <td>€2.75</td>
+        </tbody>
+        <tbody>
+        <th>Baklava</th>
+        <td class="ingr">dough, wallnut</td>
+        <td>5 pcs</td>
+        <td>€3</td>
+        </tbody>
+        <tbody>
+        <th>Baklava with icecream </th>
+        <td class="ingr">dough, wallnut, ice cream </td>
+        <td>5 pcs</td>
+        <td>€3.25</td>
+        </tbody>
+        <tbody>
+        <th>Farina Dessert</th>
+        <td class="ingr">farina, peanut</td>
+        <td>150 gr</td>
+        <td>€3</td>
+        </tbody>
+        <tbody>
+        <th>Bici Bici</th>
+        <td class="ingr">Amyl, Ice, rose juice</td>
+        <td>50 gr</td>
+        <td>€4</td>
+        </tbody>
+    </table>
+
+    <br>
+
+    <p><em>Chef Says: <strong>Bon Apetit</strong></em></p>
+
+</body>
+</html>
