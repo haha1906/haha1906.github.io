@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Challenge: Grouped animals</title>
+    <style>
+        .square {
+            position: absolute;
+            width: 14%;
+            height: 250px;
+            background-color: rgb(63, 12, 0);
+            opacity: 0.8;
+            margin-top: -149px;
+            margin-left: 24px;
+        }
+
+        .headbar {
+            width: 75%;
+            height:120px;   
+            overflow-x: hidden;
+            overflow-y:hidden;
+            margin-left: 15%;
+            /*border-left: ridge rgb(36, 109, 95);*/
+            border-top: 1px solid rgb(63, 12, 0);
+            border-bottom: 16px ridge rgb(63, 12, 0);
+            border-right: 16px ridge rgb(63, 12, 0);
+            border-bottom-right-radius: 16px;
+            background-color: rgb(255, 233, 228);
+            background-color: rgb(122, 201, 186);
+            background-color: rgb(36, 109, 95);
+            background-color: rgb(63, 12, 0);
+            background-color: rgb(12, 2, 0);
+            background-color: rgb(255, 233, 228);
+            padding: 5px;
+        }
+
+            .headbar h1 {
+                padding-left: 10%;
+                color: rgb(12, 2, 0);
+                font-size: 40px;
+            }
+            .headbar h3 {
+                padding-left: 3%;
+                color: rgb(12, 2, 0);
+                width: auto;
+                border-bottom: 1px dashed gray;
+                font-style: italic;
+            }
+
+        .sidebar {
+            position: relative;
+            background: rgb(255, 233, 228);
+            width: 230px;
+            height: 800px;
+            border-top: 16px ridge rgb(12, 2, 0);
+            border-left: 16px ridge rgb(12, 2, 0);
+            border-top-left-radius: 20px;
+            float: left;
+            margin-right: 15px;
+            margin-top: -16px;
+            padding: 6px;
+            padding-top: 15px;
+        }
+        .menu-click {
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-top: 6px;
+            padding: 6px;
+            padding-left: 10px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            /*border-top: 1px dotted rgb(141, 206, 193);*/
+            background-color: rgb(255, 216, 207);
+        }
+            .menu-click:hover {
+                background-color: rgb(255, 233, 228);
+                border: 2px solid rgb(222, 146, 128);
+            }
+        .allnews {
+            background-color: rgb(255, 216, 207);
+            text-align: center;
+            margin-top: 40px;
+        }
+        .allnews h2{
+            padding-top:30px;
+        }
+        .news {
+            margin-top: 6px;
+            padding: 6px;
+            padding-left: 10px;
+            
+            border-bottom: 1px solid gray;
+            border-top: 1px solid gray;
+ 
+        }
+        .news p{
+            text-align:left;
+        }
+        .content {
+            position: relative;
+            border: 1px solid black;
+            padding: 20px;
+            margin-left: 260px;
+            margin-right: 3%;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+
+
+    
+    <div class="headbar">
+    
+        <h1> Fluent Flute</h1>
+        <h3> "Learn flute language like a native"</h3>
+    </div>
+    <div class="square">
+
+    </div>
+
+    <div class="sidebar">
+        <h5>Are you interested in music?</h5>
+        <p>
+            Music is the nutrition of the life.
+        </p>
+        <a href="#whatt">
+            <div class="menu-click">
+                What's flute?
+            </div>
+        </a>
+        <a href="#whatt">
+            <div class="menu-click">
+                başka
+            </div>
+        </a>
+        <a href="#whatt">
+            <div class="menu-click">
+                asdfasdfasdf
+            </div>
+        </a>
+        <div class="allnews">
+            <h2>NEWS</h2>
+
+            <div class="news">
+                <h4>Dutch International Flute Competition</h4>
+                <p>Results of 2019 Dutch International Flute Competition are announced. Lise de Munck won the 3rd prize as the young talent. To see the whole list visit <a href="https://www.fluitconcours.nl/en/home-engels">official page</a>.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content" >
+        <h1>Fluent Flute</h1>
+        <p> Are you interested in music? Like humans, musical intruments have a variety of languages. Languages of flute family composes just one division. If you want to learn more, read the rest. And if you think that you can speak or learn our language, just join us.</p>
+        <br><br><br><br><br>
+        <h2 id="whatt">What is Flute</h2>
+        <p>Flute is a nice enstrument</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Shinobue_and_other_flutes.jpg" width:60%>
+
+        <h2id="flute-language">What is Flute</h2>
+        <p>Flute is a nice enstrument</p>
+    </div>
+</body>
+</html>
