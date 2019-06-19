@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Flütü üfle halayı bekle 300 500 zıptı çıktı</title>
+    <title>Flütü 300 500</title>
     <style>
         .background-img {
             position: fixed;
@@ -61,15 +61,31 @@
                 font-style: italic;
                 text-align: right;
             }
+        .bottom-bar {
+            position: relative;
+            width: 90%;
+            height: 120px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            border-bottom: 22px ridge rgb(63, 12, 0);
+            border-left: 22px groove rgb(63, 12, 0);
+            border-right: 22px ridge rgb(63, 12, 0);
+            border-bottom-left-radius: 22px;
+            border-bottom-right-radius: 22px;
+            background: rgb(122, 70, 59);
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
 
         .sidebar {
             position: relative;
             background: rgb(122, 70, 59);
             width: 230px;
-            height: 800px;
+            height: 2850px;
             border-top: 22px groove rgb(63, 12, 0);
             border-left: 22px groove rgb(63, 12, 0);
-            border-right: 2px solid rgb(131, 45, 25);
+            
             border-top-left-radius: 22px;
             float: left;
             margin-right: 15px;
@@ -97,7 +113,7 @@
         .allnews {
             background-color: rgb(255, 216, 207);
             text-align: center;
-            margin-top: 40px;
+            margin-top: 240px;
             color: black;
         }
             .allnews h2 {
@@ -151,10 +167,30 @@
         .table {
             background-color: white;
             padding:6px;
+            border:2px solid black;
         }
         #time {
             font-family: 'Segoe UI';
             font-weight: bold;
+        }
+        .weekend{
+            background-color:orange;
+        }
+        th {
+            padding: 10px;
+            border-top: 6px solid black;
+            border-bottom: 1px solid black;
+        }
+        td {
+            padding: 5px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+        .morning {
+            padding: 10px;
+            border-left: 2px solid black;
+            font-style: italic;
+            text-align: left;
         }
 
 
@@ -196,11 +232,7 @@
                 What's flute?
             </div>
         </a>
-        <a href="#prices">
-            <div class="menu-click">
-                Flute prices
-            </div>
-        </a>
+        
         <a href="#who">
             <div class="menu-click">
                 Who is Fluent Flute?
@@ -228,18 +260,38 @@
                     Results of 2019 Dutch International Flute Competition are announced. Lise de Munck won the 3rd prize as the young talent.  Prizes category 3 (young artists):
 
                     <ul id="news">
-                        <li>
+                        <li id="news">
                             1st prize: Amadeus (Haynes) worth € 2500,-
-                        </li>
-                        <li>
+                        </li id="news">
+                        <li id="news">
                             2nd prize: to be defined
                         </li>
-                        <li>
+                        <li id="news">
                             3rd prize: to be defined
                         </li>
                     </ul>
 
                     To see the whole list visit <a href="https://www.fluitconcours.nl/en/home-engels">official page</a>.
+                </p>
+
+            </div>
+            <br /><br />
+            <div class="news">
+                <h4>Radius Ensemble Concert</h4>
+                <p id="date">05.05.2019</p>
+                <p>
+                    With a colorful concert, Radius Ensemble shows why it’s lasted 20 years.<br />
+                    According to Boston Globe, this concert, “Vision,” was the final outing in Radius’s 20th season, and its 
+                    repertoire called for many atypical sonic blends. The piece with the fewest 
+                    players began the evening; Holland’s brief “Alchemy” explored the bright, 
+                    hollow sound of alto flute and cello — here played by Sarah Brady and Miriam
+                    Bolkosky — with dissonant, slow-moving chorales and lots of extended-technique
+                    effects, some of which contributed more to the piece than others.
+
+                    You can read the full article on 
+                    <a href="https://www.bostonglobe.com/arts/music/2019/05/05/with-colorful-concert-radius-ensemble-shows-why-lasted-years/qTIUk4QwYWqBvjuyYmhFNI/story.html">
+                    Boston Globe's page
+                        </a>.
                 </p>
 
             </div>
@@ -250,101 +302,178 @@
     <div class="content">
 
         <h1>Fluent Flute</h1>
-        <p> Are you interested in music? Like humans, musical intruments have a variety of languages.
-        Languages of flute family composes just one division. If you want to learn more, read the rest.
-        And if you think that you can speak or learn our language, just join us.</p>
-        <br><br><br><br><br>
+        <p>
+            Are you interested in music? Like humans, musical intruments have a variety of languages.
+            Languages of flute family composes just one division. If you want to learn more, read the rest.
+            And if you think that you can speak or learn our language, just join us.
+        </p>
+        <div class="division-image"></div>
         <h2 id="what">What is Flute</h2>
         <p>
-            Flute is general name for family of musical instruments in the woodwind group. 
+            Flute is general name for family of musical instruments in the woodwind group.
             As you can see on the picture below, there are so many kinds of it around the world,
             while most of us know only "Western Concert Flute". Player of flute is called as flautist,
             flute player, flutist, flutenist or fluter.<br><br>
+            According to <em>Flutopedia,</em> flute dates back to 2600 - 2700 BCE as a Sumerian-language
+            cuneiform tablet. The footprints of flutes are also found in a recently translated
+            tablet of the Epic of Gilgamesh, which was written approximately in 2100–600 BCE.
+
+            <br><br>
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Shinobue_and_other_flutes.jpg" class="images">
             <br><br>
 
         </p>
-        
+        <div class="division-image"></div>
 
-        <h2 id="flute-language">What is Flute</h2>
-        <p>Flute is a nice enstrument</p>
+        <h2 id="who">Who is Fluent Flute?</h2>
+        <p>
+            Fluent Flute is a community which tries to understand the language of the flute family.
+            We are getting together in certain days and practicing flute. Our two experimented instructors
+            Hans and Fabia teaches to play flute on evenings.
+            <br><br>
+            3 or 4 times a year, we give big and small concerts. For these concerts, we need co-opearations
+            with some foreing languages such as piano and guitar. As you can guess, we are playing with some
+            guitarists and pianists.
+            <br><br>
+            On Sundays, we go to different churches as a band usually. Even though we are not famous, it is
+            possible that you see us on the stage of a church, concert hall or on your town square.
+            <br><br>
+            We are open to most types of the flute family ranging from ocarina, to pan pipes, that you might
+            have seen on the lips of Native Americans.
+            <br><br>
+            Yes, we are collecting money from members and course participants. But that is just a small amount
+            to pay the bills and rent of our office.
+            <br><br>
+            If you like music, you can visit our office and talk to us on saturdays. It doesn't matter, wheather
+            you have knowledge or music instrument. You can see the address, phone number of Hans and time table
+            below. We invite you to join our cosy atmosphere :)
+
+            <br><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Joueuse_de_fl%C3%BBte_%C3%A0_Ch%C3%A2teau-Thierry.jpg/1024px-Joueuse_de_fl%C3%BBte_%C3%A0_Ch%C3%A2teau-Thierry.jpg" class="images">
+            <br><br>
+
+        </p>
+
         <div class="division-image"></div>
 
         <h2 id="weekly">Weekly Program of Our Office</h2>
         <table>
             <thead class="table">
                 <tr>
-                    <th>Time</th>
+                    <th class="morning">Time</th>
                     <th>Monday</th>
                     <th>Tuesday</th>
                     <th>Wednesday</th>
                     <th>Thursday</th>
                     <th>Friday</th>
-                    <th>Saturday</th>
-                    <th>Sunday</th>
+                    <th class="weekend">Saturday</th>
+                    <th class="weekend">Sunday</th>
                 </tr>
             </thead>
             <tbody class="table">
                 <tr>
-                    <td>Morning</td>
+                    <td class="morning">Morning</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><div id="time">
-                        10:30 - 12:30
-</div>
-    Flute practice with Hans</td>
-    <td></td>
-    </tr>
-    </tbody>
-    <tbody class="table">
-        <tr>
-            <td>Afternoon</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <div id="time">14:00 - 16:30</div>
-                Course Level 1
-            </td>
-            <td>
-                <div id="time">12:00 - 13:00</div>
-                Sunday Worship
-            </td>
-        </tr>
-    </tbody>
-    <tbody class="table">
-        <tr>
-            <td>Evening</td>
-            <td></td>
-            <td>
-                <div id="time">18:00 - 20:00</div>
-                <div id="lev-1">Course Level 3</div>
-            </td>
-            <td></td>
-            <td></td>
-            <td>
-                <div id="time">18:00 - 20:00</div>
-                Course Level 2
-            </td>
-            <td>
-                <div id="time">18:00 - 20:00</div>
-                Course Level 2<br />
-                <div id="time">20:00 - 21:00</div>
-                Worship preparation
-            </td>
-            <td>
-                <div id="time">14:00 - 16:00</div>
-                Course Level 1
-            </td>
-        </tr>
-    </tbody>
-    </table>
-    </div>
+                    <td class="weekend">
+                        <div id="time">
+                            10:30 - 12:30
+                        </div>
+                        Flute practice with Hans
+                    </td>
+                    <td class="weekend"> </td>
+                </tr>
+            </tbody>
+            <tbody class="table">
+                <tr>
+                    <td class="morning">Afternoon</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="weekend">
+                        <div id="time">14:00 - 16:30</div>
+                        Course Level 1
+                    </td>
+                    <td class="weekend">
+                        <div id="time">12:00 - 13:00</div>
+                        Sunday Worship
+                    </td>
+                </tr>
+            </tbody>
+            <tbody class="table">
+                <tr>
+                    <td class="morning">Evening</em></td>
+                    <td></td>
+                    <td>
+                        <div id="time">18:00 - 20:00</div>
+                        <div id="lev-1">Course Level 3</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div id="time">18:00 - 20:00</div>
+                        Course Level 2
+                    </td>
+                    <td class="weekend">
+                        <div id="time">18:00 - 20:00</div>
+                        Course Level 2<br />
+                        <div id="time">20:00 - 21:00</div>
+                        Worship preparation
+                    </td>
+                    <td class="weekend">
+                        <div id="time">14:00 - 16:00</div>
+                        Course Level 1
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
+        <div class="division-image"></div>
+        
+        <h2 id="contacts">Contacts</h2>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td><strong>Address:</strong></td>
+
+
+                    <td>Unreal Street 40, <strong>Amsterdam</strong></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+
+                    <td><strong>+31</strong> 622 88 4909 (Hans)</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><strong>E-mail:</strong></td>
+
+                    <td>hasanakkus4040@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+  
+</div>
+
+
+    <div class="bottom-bar">
+        <p>
+            This site is designed for trial. There is not organisation named <strong>"Fluent Flute"</strong>.
+            <br />Please don't visit us <em>until we make real our dreams.</em>
+
+            <br><br>
+            For a better view go to: <a href="https://haha1906.github.io/fluent-flute.html">https://haha1906.github.io/fluent-flute</a>.
+            <br><br>
+            For contact, send e-mail to <strong>hasanakkus4040@gmail.com</strong>
+        </p>
+    </div>
 </body>
 </html>
