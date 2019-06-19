@@ -2,8 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Challenge: Grouped animals</title>
+    <title>Flütü üfle halayı bekle 300 500 zıptı çıktı</title>
     <style>
+        .background-img {
+            position: fixed;
+            width: 75%;
+            margin-left: 260px;
+            opacity: 0.3;
+        }
         .square {
             position: absolute;
             width: 14%;
@@ -12,54 +18,66 @@
             opacity: 0.8;
             margin-top: -149px;
             margin-left: 24px;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/CantigasDeSantaMariaPanPipes.jpg/220px-CantigasDeSantaMariaPanPipes.jpg);
+        }
+        .division-image {
+            width: 100%;
+            height: 25px;
+            opacity: 0.8;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Western_concert_flute.jpg/300px-Western_concert_flute.jpg);
         }
 
         .headbar {
+            position: relative;
             width: 75%;
-            height:120px;   
+            height: 120px;
             overflow-x: hidden;
-            overflow-y:hidden;
+            overflow-y: hidden;
             margin-left: 15%;
             /*border-left: ridge rgb(36, 109, 95);*/
             border-top: 1px solid rgb(63, 12, 0);
-            border-bottom: 16px ridge rgb(63, 12, 0);
-            border-right: 16px ridge rgb(63, 12, 0);
-            border-bottom-right-radius: 16px;
+            border-bottom: 22px groove rgb(63, 12, 0);
+            border-right: 22px groove rgb(63, 12, 0);
+            border-bottom-right-radius: 22px;
             background-color: rgb(255, 233, 228);
             background-color: rgb(122, 201, 186);
             background-color: rgb(36, 109, 95);
             background-color: rgb(63, 12, 0);
             background-color: rgb(12, 2, 0);
-            background-color: rgb(255, 233, 228);
+            background-color: rgba(131, 45, 25, 0.75);
             padding: 5px;
         }
 
             .headbar h1 {
                 padding-left: 10%;
-                color: rgb(12, 2, 0);
-                font-size: 40px;
+                color: white;
+                font-size: 30px;
+                font-family:"Arial",sans-serif;
             }
             .headbar h3 {
-                padding-left: 3%;
-                color: rgb(12, 2, 0);
-                width: auto;
-                border-bottom: 1px dashed gray;
+                padding-right: 10%;
+                color: rgb(255, 216, 207);
+                border-bottom: 1px dashed rgb(222, 146, 128);
                 font-style: italic;
+                text-align: right;
             }
 
         .sidebar {
             position: relative;
-            background: rgb(255, 233, 228);
+            background: rgb(122, 70, 59);
             width: 230px;
             height: 800px;
-            border-top: 16px ridge rgb(12, 2, 0);
-            border-left: 16px ridge rgb(12, 2, 0);
-            border-top-left-radius: 20px;
+            border-top: 22px groove rgb(63, 12, 0);
+            border-left: 22px groove rgb(63, 12, 0);
+            border-right: 2px solid rgb(131, 45, 25);
+            border-top-left-radius: 22px;
             float: left;
             margin-right: 15px;
-            margin-top: -16px;
+            margin-top: -22px;
             padding: 6px;
             padding-top: 15px;
+            color: white;
+            text-align: center;
         }
         .menu-click {
             border-top-left-radius: 10px;
@@ -80,41 +98,86 @@
             background-color: rgb(255, 216, 207);
             text-align: center;
             margin-top: 40px;
+            color: black;
         }
-        .allnews h2{
-            padding-top:30px;
-        }
+            .allnews h2 {
+                padding-top: 30px;
+                
+            }
         .news {
             margin-top: 6px;
             padding: 6px;
             padding-left: 10px;
-            
             border-bottom: 1px solid gray;
             border-top: 1px solid gray;
- 
+            
         }
         .news p{
             text-align:left;
+        }
+            #date {
+                text-align: right;
+                font-size:0.75em;
+               text-decoration:underline;
+               line-height:1px;
+               
+            }
+        .images{
+            width:95%;
         }
         .content {
             position: relative;
             border: 1px solid black;
             padding: 20px;
-            margin-left: 260px;
+            margin-left: 270px;
             margin-right: 3%;
         }
+            .content p, .content table, .content h1, .content h2, .content.h3 {
+                background: rgba(239, 239, 239, 0.8);
+                padding: 16px;
+                border-top-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+                border-top: 2px solid gray;
+            }
+            .content p, .content table {
+                padding-top: 4px;
+                margin-top: 2px;
+                border-top-left-radius: 0px;
+                border-top: 0px;
+                border-bottom: 2px solid gray;
+            }
+
+
+        .table {
+            background-color: white;
+            padding:6px;
+        }
+        #time {
+            font-family: 'Segoe UI';
+            font-weight: bold;
+        }
+
+
 
     </style>
+
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
 
 
-
-
-
-    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flute_with_musicial_notes.jpg/800px-Flute_with_musicial_notes.jpg" class="background-img" />
     <div class="headbar">
-    
+
         <h1> Fluent Flute</h1>
         <h3> "Learn flute language like a native"</h3>
     </div>
@@ -122,48 +185,166 @@
 
     </div>
 
+
     <div class="sidebar">
         <h5>Are you interested in music?</h5>
         <p>
-            Music is the nutrition of the life.
+            Visit our office.
         </p>
-        <a href="#whatt">
+        <a href="#what">
             <div class="menu-click">
                 What's flute?
             </div>
         </a>
-        <a href="#whatt">
+        <a href="#prices">
             <div class="menu-click">
-                başka
+                Flute prices
             </div>
         </a>
-        <a href="#whatt">
+        <a href="#who">
             <div class="menu-click">
-                asdfasdfasdf
+                Who is Fluent Flute?
             </div>
         </a>
+        <a href="#weekly">
+            <div class="menu-click">
+                Weekly program
+            </div>
+        </a>
+        <a href="#contacts">
+            <div class="menu-click">
+                Contacts
+            </div>
+        </a>
+
+
         <div class="allnews">
             <h2>NEWS</h2>
 
             <div class="news">
                 <h4>Dutch International Flute Competition</h4>
-                <p>Results of 2019 Dutch International Flute Competition are announced. Lise de Munck won the 3rd prize as the young talent. To see the whole list visit <a href="https://www.fluitconcours.nl/en/home-engels">official page</a>.</p>
+                <p id="date">11.06.2019</p>
+                <p>
+                    Results of 2019 Dutch International Flute Competition are announced. Lise de Munck won the 3rd prize as the young talent.  Prizes category 3 (young artists):
+
+                    <ul id="news">
+                        <li>
+                            1st prize: Amadeus (Haynes) worth € 2500,-
+                        </li>
+                        <li>
+                            2nd prize: to be defined
+                        </li>
+                        <li>
+                            3rd prize: to be defined
+                        </li>
+                    </ul>
+
+                    To see the whole list visit <a href="https://www.fluitconcours.nl/en/home-engels">official page</a>.
+                </p>
 
             </div>
         </div>
     </div>
 
 
-    <div class="content" >
-        <h1>Fluent Flute</h1>
-        <p> Are you interested in music? Like humans, musical intruments have a variety of languages. Languages of flute family composes just one division. If you want to learn more, read the rest. And if you think that you can speak or learn our language, just join us.</p>
-        <br><br><br><br><br>
-        <h2 id="whatt">What is Flute</h2>
-        <p>Flute is a nice enstrument</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Shinobue_and_other_flutes.jpg" width:60%>
+    <div class="content">
 
-        <h2id="flute-language">What is Flute</h2>
+        <h1>Fluent Flute</h1>
+        <p> Are you interested in music? Like humans, musical intruments have a variety of languages.
+        Languages of flute family composes just one division. If you want to learn more, read the rest.
+        And if you think that you can speak or learn our language, just join us.</p>
+        <br><br><br><br><br>
+        <h2 id="what">What is Flute</h2>
+        <p>
+            Flute is general name for family of musical instruments in the woodwind group. 
+            As you can see on the picture below, there are so many kinds of it around the world,
+            while most of us know only "Western Concert Flute". Player of flute is called as flautist,
+            flute player, flutist, flutenist or fluter.<br><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Shinobue_and_other_flutes.jpg" class="images">
+            <br><br>
+
+        </p>
+        
+
+        <h2 id="flute-language">What is Flute</h2>
         <p>Flute is a nice enstrument</p>
+        <div class="division-image"></div>
+
+        <h2 id="weekly">Weekly Program of Our Office</h2>
+        <table>
+            <thead class="table">
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody class="table">
+                <tr>
+                    <td>Morning</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><div id="time">
+                        10:30 - 12:30
+</div>
+    Flute practice with Hans</td>
+    <td></td>
+    </tr>
+    </tbody>
+    <tbody class="table">
+        <tr>
+            <td>Afternoon</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <div id="time">14:00 - 16:30</div>
+                Course Level 1
+            </td>
+            <td>
+                <div id="time">12:00 - 13:00</div>
+                Sunday Worship
+            </td>
+        </tr>
+    </tbody>
+    <tbody class="table">
+        <tr>
+            <td>Evening</td>
+            <td></td>
+            <td>
+                <div id="time">18:00 - 20:00</div>
+                <div id="lev-1">Course Level 3</div>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+                <div id="time">18:00 - 20:00</div>
+                Course Level 2
+            </td>
+            <td>
+                <div id="time">18:00 - 20:00</div>
+                Course Level 2<br />
+                <div id="time">20:00 - 21:00</div>
+                Worship preparation
+            </td>
+            <td>
+                <div id="time">14:00 - 16:00</div>
+                Course Level 1
+            </td>
+        </tr>
+    </tbody>
+    </table>
     </div>
+
 </body>
 </html>
