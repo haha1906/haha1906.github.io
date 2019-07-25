@@ -1,0 +1,35 @@
+
+
+.shortInput {
+    width: 100px;
+    background-color: honeydew;
+}
+.longInput {
+    width: 400px;
+    background-color: honeydew;
+}
+input {
+    
+    margin: 5px;
+    
+    
+}
+input:focus{
+    background-color:#efe4a8;
+}
+.slangInput {
+    border: 4px solid red;
+    
+}
+.notSlangInput {
+    border: 1px solid black;
+}
+.wrongInput{
+    border: 3px solid red;
+}
+.trueInput{
+    border: 3px solid green;
+}
+.normalInput {
+    border: none;
+}
