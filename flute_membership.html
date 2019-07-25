@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Flütü 300 500</title>
+    <link rel="stylesheet" type="text/css" href="CSS/flute_membership.css">
+    <link rel="stylesheet" type="text/css" href="CSS/flute_membership_form.css" />
+</head>
+<body onload="showWantTel()">
+
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flute_with_musicial_notes.jpg/800px-Flute_with_musicial_notes.jpg" class="background-img" />
+    <div class="headbar">
+
+        <p class="head-head"> Fluent Flute</p>
+        <p class="head-down"> "Learn flute language like a native"</p>
+    </div>
+    <div class="square">
+
+    </div>
+
+
+    <div class="sidebar">
+        <h5>Are you interested in music?</h5>
+        <p>
+            Visit our office.
+        </p>
+        <a href="#what">
+            <div class="menu-click">
+                What's flute?
+            </div>
+        </a>
+
+        <a href="#who">
+            <div class="menu-click">
+                Who is Fluent Flute?
+            </div>
+        </a>
+        <a href="#weekly">
+            <div class="menu-click">
+                Weekly program
+            </div>
+        </a>
+        <a href="#contacts">
+            <div class="menu-click">
+                Contacts
+            </div>
+        </a>
+
+
+        <div class="allnews">
+            <h2>NEWS</h2>
+
+            <div class="news">
+                <h4>Dutch International Flute Competition</h4>
+                <p id="date">11.06.2019</p>
+                <p>
+                    Results of 2019 Dutch International Flute Competition are announced. Lise de Munck won the 3rd prize as the young talent.  Prizes category 3 (young artists):
+
+                    <ul id="news">
+                        <li id="news">
+                            1st prize: Amadeus (Haynes) worth € 2500,-
+                        </li>
+                        <li id="news">
+                            2nd prize: to be defined
+                        </li>
+                        <li id="news">
+                            3rd prize: to be defined
+                        </li>
+                    </ul>
+
+                    To see the whole list visit <a href="https://www.fluitconcours.nl/en/home-engels">official page</a>.
+                </p>
+
+            </div>
+            <br /><br />
+            <div class="news">
+                <h4>Radius Ensemble Concert</h4>
+                <p id="date">05.05.2019</p>
+                <p>
+                    With a colorful concert, Radius Ensemble shows why it’s lasted 20 years.<br />
+                    According to Boston Globe, this concert, “Vision,” was the final outing in Radius’s 20th season, and its
+                    repertoire called for many atypical sonic blends. The piece with the fewest
+                    players began the evening; Holland’s brief “Alchemy” explored the bright,
+                    hollow sound of alto flute and cello — here played by Sarah Brady and Miriam
+                    Bolkosky — with dissonant, slow-moving chorales and lots of extended-technique
+                    effects, some of which contributed more to the piece than others.
+
+                    You can read the full article on
+                    <a href="https://www.bostonglobe.com/arts/music/2019/05/05/with-colorful-concert-radius-ensemble-shows-why-lasted-years/qTIUk4QwYWqBvjuyYmhFNI/story.html">
+                        Boston Globe's page
+                    </a>.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+
+        <h1>9<sup>th</sup> Summer Music Camp</h1>
+        <p>
+            Every summer we are getting together to learn musical instruments.
+            Experienced instructers from all around the world comes for 2 weeks
+            and teach us with reasonable prices. This year we are organising the
+            <em>9<sup>th</sup> Summer Music Camp</em>. Our target is the youngs
+            between 15-35 years old. I believe that every music-lover could find
+            his/her place according to their levels. Just you need to fill the
+            form below.
+        </p>
+        <div class="division-image"></div>
+        <h2 id="formTitle">9<sup>th</sup> Summer Music Camp Application Form</h2>
+
+        <form action="submitted.html">
+            <fieldset>
+                <legend>Personal</legend>
+                <div class="inputBox">
+                    <div id="phoneDiv1">
+                        <label>Telefon number </label><br />
+                        <label><em>+</em></label>
+                        <input style="width:30px" name="phoneCountry" type="tel" id="phoneCountry"
+                               value="90" required oninput="if (this.value.length > this.maxLength)
+                           this.value = this.value.slice(0, this.maxLength);" maxlength="3" placeholder="90" />
+
+                        <input style="width:130px" name="phone" type="tel" id="phoneNumber"
+                               required maxlength="15" placeholder="5xxxxxxxxx" /><br />
+                    </div>
+                    <label>Which comunication options can you use with this phone?</label><br />
+                    <label style="margin-left:30px">
+                        <input type="checkbox" name="contactChecks1" id="checkmobile" value="checked" checked>
+                        Mobile Phone <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYA
+                                      AABzenr0AAACsElEQVRYR+3XS6gWZRzH8c/RaCEUGRFEuDHTXeamgsiQTEUpuomm
+                                      FBh4CylQukAUCCoKogtdlWlqN0otUanURQihhgsLSSyiTZQLW5Qhkkbxg+fInGHO
+                                      +56jc9CFs51n/r/v879Pj6v89FxlfdcswM1YhBHYhe+HylNNHhiJAxiLs7gVT+LLo
+                                      YCoA/SKj8IjOIWPMR1P4Yu2IeoAufk9RfxEEbuhQMzAM9jXJkQVIC7PjZ8uca/qB
+                                      OIjPFYg9rYFUQWYh7dxE843CATiQzyOKTjUBkQV4A28iDs7GA7E1ziDJ9oGeB0v4
+                                      44OhlOeR0pZzm4bYA62lxCcazAe8a9wNx7CybYBxuAnTMX+mvGq+GQcb0M8Nupl+
+                                      ENx8Qs1gU/wKCa1Kd4EsBQrcBd+r0C8guW4Fz+2dfsmgJTgz/gcCypCN+Lb4rEH8
+                                      XdbEE2zIKW4AffjWEUoOXIUh0sJXmwDoglgWLlt7D+AqtDDZSjtxlz82wCRjnofv
+                                      sEv3SD72wcmlGRcg7dqRjIPPkDacSCqXTOl/B6G4wKexWedIDotJK9iVen/9Sk4DZ
+                                      +WhpTZcRoR31oA0tDeKXMjDatfiE4AebcDqfu4vl7744vhLC0ZVEuwBQvxX/FCgGa
+                                      iX4huK1mMHyzdLyDf1dx5C9bjOWyuiPceSyg6QnQDiKFsRGnBo8tm1DQFb8Mf5eb1
+                                      kFchkj97qgcGApDz6Q+JeTrhMmzslt2194FI0mbSZuG59AwUIB/EyOoCkK1oMX4dB
+                                      MhKzMftlwvQ+12GVTI88U+VrMM/XUBSjtvK2deuFKA3JOkPL+E3rMX7+LMB5Hm8W5
+                                      IxHkiFXFYImi6Z3eBNzCqG06qzzGadz4adTpqYbyqzpY94DA4mBzp5OVWQFW0ixiH
+                                      7w1+lUe3s9E/RFsAgcrHv0esA/wO3CH8hMdIaEgAAAABJRU5ErkJggg==" />
+                    </label><br />
+
+                    <label style="margin-left:30px">
+                        <input type="checkbox" name="contactChecks1" id="checkWhatsApp" value="checked" checked>
+                        <b>WhatsApp</b> <img src="https://www.opera.com/pcappshub/assets/img/sw-icons/whatsapp.png"
+                                             class="icon" />
+                    </label><br />
+                    <label style="margin-left:30px">
+                        <input type="checkbox" name="contactChecks1" id="checkKakao" value="checked">
+                        Kakao Talk <img src="https://cdn.iconscout.com/icon/free/png-256/kakaotalk-2-226573.png"
+                                        class="icon" />
+                    </label><br /><br />
+                    <label>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <input type="checkbox" name="wantTel" id="checkWantTel" onchange="showWantTel();">
+                        I want to add my 2<sup>nd</sup> telephone number.
+                    </label><br />
+                </div>
+
+                <div style="margin-left:10%; display:none" class="inputBox" id="wantTelArea">
+                    <div id="phoneDiv2">
+                        <label style="margin-left:10px"><b> 2<sup>nd </sup></b> Telefon number </label><br />
+                        <label><em>+</em></label>
+                        <input style="width:30px" name="phoneCountry2" type="tel" id="phoneCountry2"
+                               value="90" oninput="if (this.value.length > this.maxLength)
+                           this.value = this.value.slice(0, this.maxLength);" maxlength="3" placeholder="90" />
+                        <input style="width:130px" name="phone2" type="tel" id="phoneNumber2"
+                               maxlength="15" placeholder="5xxxxxxxxx" /><br />
+                    </div>
+                        <label>Which comunication options can you use with your <b>2<sup>nd </sup>  phone?</b></label><br />
+                        <label style="margin-left:30px">
+                            <input type="checkbox" name="contactChecks2" id="checkmobile2" value="mobileUser2">
+                            Mobile Phone <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYA
+                                      AABzenr0AAACsElEQVRYR+3XS6gWZRzH8c/RaCEUGRFEuDHTXeamgsiQTEUpuomm
+                                      FBh4CylQukAUCCoKogtdlWlqN0otUanURQihhgsLSSyiTZQLW5Qhkkbxg+fInGHO
+                                      +56jc9CFs51n/r/v879Pj6v89FxlfdcswM1YhBHYhe+HylNNHhiJAxiLs7gVT+LLo
+                                      YCoA/SKj8IjOIWPMR1P4Yu2IeoAufk9RfxEEbuhQMzAM9jXJkQVIC7PjZ8uca/qB
+                                      OIjPFYg9rYFUQWYh7dxE843CATiQzyOKTjUBkQV4A28iDs7GA7E1ziDJ9oGeB0v4
+                                      44OhlOeR0pZzm4bYA62lxCcazAe8a9wNx7CybYBxuAnTMX+mvGq+GQcb0M8Nupl+
+                                      ENx8Qs1gU/wKCa1Kd4EsBQrcBd+r0C8guW4Fz+2dfsmgJTgz/gcCypCN+Lb4rEH8
+                                      XdbEE2zIKW4AffjWEUoOXIUh0sJXmwDoglgWLlt7D+AqtDDZSjtxlz82wCRjnofv
+                                      sEv3SD72wcmlGRcg7dqRjIPPkDacSCqXTOl/B6G4wKexWedIDotJK9iVen/9Sk4DZ
+                                      +WhpTZcRoR31oA0tDeKXMjDatfiE4AebcDqfu4vl7744vhLC0ZVEuwBQvxX/FCgGa
+                                      iX4huK1mMHyzdLyDf1dx5C9bjOWyuiPceSyg6QnQDiKFsRGnBo8tm1DQFb8Mf5eb1
+                                      kFchkj97qgcGApDz6Q+JeTrhMmzslt2194FI0mbSZuG59AwUIB/EyOoCkK1oMX4dB
+                                      MhKzMftlwvQ+12GVTI88U+VrMM/XUBSjtvK2deuFKA3JOkPL+E3rMX7+LMB5Hm8W5
+                                      IxHkiFXFYImi6Z3eBNzCqG06qzzGadz4adTpqYbyqzpY94DA4mBzp5OVWQFW0ixiH
+                                      7w1+lUe3s9E/RFsAgcrHv0esA/wO3CH8hMdIaEgAAAABJRU5ErkJggg==" />
+                        </label><br />
+
+                        <label style="margin-left:30px">
+                            <input type="checkbox" name="contactChecks2" id="checkWhatsApp2" value="whatsAppUser2">
+                            WhatsApp<img src="https://www.opera.com/pcappshub/assets/img/sw-icons/whatsapp.png"
+                                         class="icon" />
+                        </label><br />
+                        <label style="margin-left:30px">
+                            <input type="checkbox" name="contactChecks2" id="checkKakao2" value="KakaoUser">
+                            Kakao Talk <img src="https://cdn.iconscout.com/icon/free/png-256/kakaotalk-2-226573.png"
+                                            class="icon" />
+                        </label><br /><br />
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="inputBox">
+                    <label>First Name(s) :</label>
+                    <input type="text" name="fName" id="fName" placeholder="Osman" class="longInput"
+                           required min="2" pattern="^((?![0-9])(?!fuck)(?!viagra)(?!cialis).)*$"><br />
+                    <label>Last Name(s) :</label>
+                    <input type="text" name="lName" id="lName" placeholder="Butubüken"
+                           required min="2" pattern="^((?![0-9]).)*$" class="shortInput" />
+                    <label>Check for Slang Words</label>
+                    <input type="button" name="checkSlang" id="checkSlang" value="checkSlang"
+                           onclick="slangCheck()" /><br />
+                    <label>Birth Year (yyyy) :</label>
+                    <input type="number" placeholder="1998" name="birthDate" id="birthDate" required
+                           min="1950" max="2010"  oninput="if (this.value.length > this.maxLength)
+                           this.value = this.value.slice(0, this.maxLength);" maxlength="4"/><br />
+
+                    <div id="genderDiv">
+                        <label>Gender :</label><br />
+                        <label style="margin-left:30px"><input type="radio" name="gender" id="male" value="male" required />Male</label><br />
+                        <label style="margin-left:30px"><input type="radio" name="gender" id="female" value="female" />Female</label><br /> <br />
+                    </div>
+                </div>
+
+                    <input type="submit" value="Submit My Answers" onclick="return checkEverything();" />
+
+
+</fieldset>
+            
+        </form>
+
+
+    </div>
+
+
+    <div class="bottom-bar">
+        <p>
+            This site is designed for trial. There is not organisation named <strong>"Fluent Flute"</strong>.
+            <br />Please don't visit us <em>until we make real our dreams.</em>
+
+            <br><br>
+            For a better view go to: <a href="https://haha1906.github.io/fluent-flute.html">https://haha1906.github.io/fluent-flute</a>.
+            <br><br>
+            For contact, send e-mail to <strong>hasanakkus4040@gmail.com</strong>
+        </p>
+    </div>
+    <script src="JS/flute_membership.js"></script>
+</body>
+</html>
