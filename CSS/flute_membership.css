@@ -1,0 +1,290 @@
+﻿
+/* 
+            I wanted to make the surrounding elements dark, so that I could focus people on the content of my webpage
+            My page has 4 blocks:
+            1- Head bar
+            2- Side bar
+            3- Bottom bar
+            4- Content.
+
+            Because I don't want to use z-index so much, I began with my background image.
+            I found it on Vikipedia, and fix it to the whole page.
+            Made it transperant to make reading easier. 
+            (If I had draw the background image by myself, I could make it without "opacity" function.)
+            Shifted my background image 260px to seperate it from the side bar.
+        */
+.background-img {
+    position: fixed;
+    width: 75%;
+    margin-left: 260px;
+    opacity: 0.3;
+}
+/*
+            To the top left, I put a small image as a part of division.
+            I don't know how the developers does exactly, I tried to put it inside a division.
+            Because there are two people playing flute, It will not be a proplem, incase of one is hidden in a narrow page
+            (You can scroll your Chorome window by sides and see that one is hiding)
+        */
+.square {
+    position: absolute;
+    width: 14%;
+    height: 280px;
+    background-color: rgb(63, 12, 0);
+    opacity: 0.8;
+    margin-top: -175px;
+    margin-left: 24px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/CantigasDeSantaMariaPanPipes.jpg/220px-CantigasDeSantaMariaPanPipes.jpg);
+}
+/*
+            also wanted to add some images to color the page. For that, 
+            I found a long (to the sides) image on wikipedia, and selected the smallest size.
+            Put it inside the divisions, just like the previous one.
+
+        */
+.division-image {
+    width: 100%;
+    height: 25px;
+    opacity: 0.8;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Western_concert_flute.jpg/300px-Western_concert_flute.jpg);
+}
+/*
+            As my head bar, I preferred to write just two titles. 
+            (Unfortunately, they are showing different attributes on
+            Chorome and Codepen. I have written my codes on Visual Studio
+            and coppied to Codepen after I finished. My Github site has a 
+            better view.)
+
+            I will explain the borders and corners later.
+        */
+.headbar {
+    position: relative;
+    width: 75%;
+    height: 120px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-left: 15%;
+    /*border-left: ridge rgb(36, 109, 95);*/
+    border-top: 1px solid rgb(63, 12, 0);
+    border-bottom: 22px groove rgb(63, 12, 0);
+    border-right: 22px groove rgb(63, 12, 0);
+    border-bottom-right-radius: 22px;
+    /*
+                These colors are picked from Paletton web site
+                It was suggested by Khan Academy.
+                Firstly I had used blue, but converted it into red and it's tones.
+                background-color: rgb(255, 233, 228);
+                background-color: rgb(63, 12, 0);
+                background-color: rgb(12, 2, 0);
+            */
+    background-color: rgba(131, 45, 25, 0.75);
+    padding: 15px;
+}
+/*
+            I have some problems in Codepen with font types. I never used a different font
+            type except for headbar h1, because I am confused.
+        */
+.head-head {
+    padding-left: 10%;
+    color: white;
+    font-size: 70px;
+    line-height: 2px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.head-down {
+    padding-right: 10%;
+    color: rgb(255, 216, 207);
+    border-bottom: 1px dashed rgb(222, 146, 128);
+    font-style: italic;
+    text-align: right;
+    line-height: 12px;
+}
+/*
+                Top, side and bottom bars are completing each other. 
+                In their borders, I've created a flow beginning from right top,
+                turning to left with a rounded corner. Then in the side bar,
+                It is following from the left end of the page. In the bottom,
+                the edge hugs the page with its arms. 
+                So people's eyes track the line beginning from right top,
+                gazing the menu and contents. If they are in hurry, they
+                looks to the news immediately and moves below.
+            */
+.bottom-bar {
+    position: relative;
+    width: 90%;
+    height: 120px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-bottom: 22px ridge rgb(63, 12, 0);
+    border-left: 22px groove rgb(63, 12, 0);
+    border-right: 22px ridge rgb(63, 12, 0);
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    background: rgb(122, 70, 59);
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+/*
+            Side bar is connected to top bar with a margin of "-22px", just like buttom bar.
+        */
+.sidebar {
+    position: relative;
+    background: rgb(122, 70, 59);
+    width: 230px;
+    height: 3000px;
+    border-top: 22px groove rgb(63, 12, 0);
+    border-left: 22px groove rgb(63, 12, 0);
+    border-top-left-radius: 22px;
+    float: left;
+    margin-right: 15px;
+    margin-top: -22px;
+    padding: 6px;
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+}
+/*
+            I want the click buttons to change their color as well as move
+            a little bit. To give a moving effect, I made the borders thicker
+            while the mouse is hovering them.
+        */
+.menu-click {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 6px;
+    padding: 6px;
+    padding-left: 10px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    /*border-top: 1px dotted rgb(141, 206, 193);*/
+    background-color: rgb(255, 216, 207);
+}
+
+    .menu-click:hover {
+        background-color: rgb(255, 233, 228);
+        border: 2px solid rgb(222, 146, 128);
+    }
+/*
+                This .allnews clas is made to begin the news and decrease the codes
+                in other classes.
+            */
+.allnews {
+    background-color: rgb(255, 216, 207);
+    text-align: center;
+    margin-top: 240px;
+    color: black;
+}
+
+    .allnews h2 {
+        padding-top: 30px;
+    }
+
+.news {
+    margin-top: 6px;
+    padding: 6px;
+    padding-left: 10px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+    .news p {
+        text-align: left;
+    }
+
+#date {
+    text-align: right;
+    font-size: 0.75em;
+    text-decoration: underline;
+    line-height: 1px;
+}
+/*
+                I collected every image in one class
+                There is no frame. Just width of %95.
+            */
+.images {
+    width: 95%;
+}
+/*
+            Made this content as a main block.
+            At first, I added borders for the purpose of checking the size
+            of my tables, paragraphes and images. But did not want to remove it,
+            because it focuses people on the writings.
+        */
+.content {
+    position: relative;
+    border: 1px solid black;
+    padding: 20px;
+    margin-left: 270px;
+    margin-right: 3%;
+}
+    /*
+            You will see a rgba() color code. The a refers the transparancy.
+            I tried so much to adjust it with opacity. But I searched on Stackoverflow
+            and this easier way.
+        */
+    .content p, .content table, .content h1, .content h2, .content.h3, fieldset {
+        background: rgba(239, 239, 239, 0.8);
+        padding: 16px;
+        border-top-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-top: 2px solid gray;
+    }
+    /*
+                these contents are seperated with comas to decrease the code length.
+            */
+    .content p, .content table {
+        padding-top: 4px;
+        margin-top: 2px;
+        border-top-left-radius: 0px;
+        border-top: 0px;
+        border-bottom: 2px solid gray;
+    }
+
+/*
+                This makes the table nice
+            */
+.table {
+    background-color: white;
+    padding: 6px;
+    border: 2px solid black;
+}
+
+#time {
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+.weekend {
+    background-color: orange;
+}
+
+th {
+    padding: 10px;
+    border-top: 6px solid black;
+    border-bottom: 1px solid black;
+}
+
+td {
+    padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.morning {
+    padding: 10px;
+    border-left: 2px solid black;
+    font-style: italic;
+    text-align: left;
+}
+.icon{
+    height:18px;
+}
+.inputBox{
+    border:1px solid gray;
+    padding:6px;
+    margin:10px;
+}
+
