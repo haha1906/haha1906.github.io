@@ -1,0 +1,298 @@
+/*General Styles*/
+@font-face {
+    font-family: jui;
+    src: url(font/jui.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: moneytepe;
+    src: url(font/moneytepe.ttf);
+    font-weight: bold;
+  }
+@import url('https://fonts.googleapis.com/css?family=Nosifer');
+@import url('https://fonts.googleapis.com/cssfamily=Archivo+Black');
+@import url('https://fonts.googleapis.com/cssfamily=Mukta:700,800');
+@import url('https://fonts.googleapis.com/cssfamily=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+*
+{
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box; 
+    margin:0;
+    padding:0;
+    letter-spacing: 1.5px;
+}
+.font1{font-family: 'Inconsolata', monospace;}
+.font2{font-family:'Roboto Slab', serif;}
+.font3{font-family:'jui', sans-serif;}
+.font4{font-family:'moneytepe', sans-serif;}
+.clear{clear: both;}
+
+/*Main Header*/
+/************/
+
+
+.container
+{
+    background-color:black;
+    font-size: 14px;
+    width:80%;
+    margin:0 30px 30px 30px;
+    margin:auto;
+    box-shadow:  .5px 15px 30px #111;
+
+
+}
+.bar-icon{
+    min-width:74px;
+    width: 10%;
+    float:left;
+}
+img[alt="mainlogo"]{transition: transform 1.5s;}
+img[alt="mainlogo"]:hover
+{
+transform: rotate3d(1,10,1,365deg);
+transition-delay: .3s;}
+/*Logo Margins*/
+/********/
+
+    .main-header
+{
+
+    background:black;
+    background-size:cover;
+    width:100%;
+    margin:auto;
+    padding:50px 5% 10px 3%;
+
+}
+.main-header img 
+{
+margin:0px 0 0px 0px;
+display :inline-block;
+height:auto;
+
+
+}
+
+/*Navbar Setting*/
+/**********/
+ul
+{
+    text-align: center;
+    float: right;
+}
+.main-navbar
+{
+    background:rgba(0,0,0,.7);
+}
+.main-navbar ul li
+{
+    display:inline-block;
+    padding:5% 4px 10px 4px;
+    background:black;
+}
+.main-navbar ul li a
+{
+    text-decoration: none;
+    color:#eee;
+    padding: 14px 2px;
+    transition:border .5s;
+    border-radius: 10px;
+    
+}
+
+.main-navbar ul li a:hover
+{
+  border-bottom:2px solid   #fff566;
+}
+div.nav-icons
+{
+    padding:27px 0;
+    float: right;
+    margin-right:10%;
+    overflow: hidden;
+
+}
+
+div.nav-icons a
+{
+    color:#fff;
+    display: inline-block;
+    text-decoration: none;
+    opacity:.6;
+    padding:4px
+}
+
+
+/*navagation bottom border*/
+/***********/
+div.header-div
+{
+    border-bottom: 1px solid black;
+
+}
+.head-title {
+    background-image: url(img/istanbul.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    height: 100%;
+}
+.head-title  h1, h2, h3 
+{
+    
+    margin:0;
+    padding:0;
+    color:#fff;
+    font-size:95px;
+    z-index:3;
+ 
+    
+}
+.head-title
+{
+    text-align: center;
+    margin:auto;
+    padding:100px 20px 100px 20px;
+}
+.head-title a 
+{
+    text-decoration:none;
+}
+
+
+/******************/
+.header-div
+{
+    position: sticky;
+    top:0; 
+    margin:auto;
+    z-index:5;
+}
+/******************/
+
+.rounded-flag{
+    
+    position: absolute; top:45px; right: 5px; 
+    
+}
+
+.rounded-plus{
+    
+    position: relative;
+      top: 65%;
+      left: 20%;
+    width:24px;
+    height:24px;
+    border:2px solid white;
+    border-radius: 50%;
+    align-items: center;
+}
+.rounded-plus a{
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.sign-in-button{
+    position: relative;
+    top: 65%;
+    left: 80%;
+  width:70px;
+  height:24px;
+  background-color: red;
+  border:2px solid darkred;
+  border-radius: 10px;
+  align-items: center;
+}
+.sign-in-button a{
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    
+}
+/*Digital production*/
+/***********/
+header .production {
+    margin:15px 0 0 0;
+    padding:10px;
+}
+
+header  .production span 
+{
+    color:orangered;
+    text-align:center;
+    display: block;
+}
+/***********/
+
+.camera
+{
+    width:91%;
+    height:600px;
+    margin-left:3%;
+    margin-right:3%;
+    background-image: url(img/camera.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+ 
+
+
+}
+
+.camera-box{
+    position: relative;
+      top: 10px;
+      left: 1%;
+    
+    max-width: 350px;
+    width:45%;
+    min-width:220px;
+
+    margin:10% 10% 10% 5%;
+    padding:5% 2% 5% 2%;
+
+    background-color: rgba(26, 31, 12, 0.383);
+    color: black;
+}
+.camera-box h3{
+    font-size: 20px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    color: black;
+}
+
+
+
+
+
+
+
+/*copyrights*/
+/****************************************/
+.copyrights 
+{
+    height:100px;
+    color:#fff;
+    padding:60px 100px;
+}
+.copyrights p {float: left;}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
