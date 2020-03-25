@@ -1,0 +1,310 @@
+/*General Styles*/
+@font-face {
+    font-family: jui;
+    src: url(font/jui.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: moneytepe;
+    src: url(font/moneytepe.ttf);
+    font-weight: bold;
+  }
+
+
+*
+{
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box; 
+    margin:0;
+    padding:0;
+    letter-spacing: 1.5px;
+}
+.font1{font-family:monospace;}
+.font2{font-family:serif;}
+.font3{font-family:'jui', sans-serif;}
+.font4{font-family:'moneytepe', sans-serif;}
+.clear{clear: both;}
+
+/*Main Header*/
+/************/
+
+
+.container
+{
+    background-color:black;
+    font-size: 14px;
+    width:80%;
+    margin:0 30px 30px 30px;
+    margin:auto;
+    box-shadow:  .5px 15px 30px #112;
+
+
+}
+.bar-icon{
+    min-width:74px;
+    width: 10%;
+    float:left;
+}
+img[alt="gunes-isini"]{transition: transform 1.2s;}
+img[alt="gunes-isini"]:hover
+{
+transform: rotate3d(1,0,1,360deg);
+transition-delay: .4s;}
+/*Icon*/
+/******/
+
+    .main-header
+{
+
+    background:black;
+    background-size:cover;
+    width:100%;
+    margin:auto;
+    padding:50px 5% 10px 3%;
+
+}
+.main-header img 
+{
+margin:0px 0 0px 0px;
+display :inline-block;
+height:auto;
+
+
+}
+
+/*navigation bar*/
+/********/
+ul
+{
+    text-align: center;
+    float: right;
+}
+.main-navbar
+{
+    background:rgba(0,0,0,.7);
+}
+.main-navbar ul li
+{
+    display:inline-block;
+    padding:5% 4px 10px 4px;
+    background:black;
+}
+.main-navbar ul li a
+{
+    text-decoration: none;
+    color:#eee;
+    padding: 14px 2px;
+    transition:border .5s;
+    border-radius: 10px;
+    
+}
+
+.main-navbar ul li a:hover
+{
+  border-bottom:2px solid   #fff567;
+}
+div.nav-icons
+{
+    padding:27px 0;
+    float: right;
+    margin-right:10%;
+    overflow: hidden;
+
+}
+
+div.nav-icons a
+{
+    color:#fff;
+    display: inline-block;
+    text-decoration: none;
+    opacity:.6;
+    padding:4px
+}
+
+
+/*bottom navigation*/
+/***********/
+div.header-div
+{
+    border-bottom: 1px solid black;
+
+}
+.head-title {
+    background-image: url(img/istanbul.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    height: 100%;
+}
+.head-title  h1
+{
+    
+    margin:0;
+    padding:0;
+    color:#fff;
+    font-size:95px;
+    z-index:3;
+ 
+    
+}
+.head-title
+{
+    text-align: center;
+    margin:auto;
+    padding:100px 20px 100px 20px;
+}
+.head-title a 
+{
+    text-decoration:none;
+}
+
+
+/****************/
+.header-div
+{
+    position: sticky;
+    top:0; 
+    margin:auto;
+    z-index:5;
+}
+/****************/
+
+.rounded-flag{
+    
+    width: 32px;
+    position: absolute; top:55px; right: 5px;
+
+    transition: all .2s ease-in-out;
+}
+.rounded-flag:hover
+{
+  transform: scale(1.2);
+}
+
+.rounded-plus{
+    
+    position: relative;
+      top: 65%;
+      left: 20%;
+    width:24px;
+    height:24px;
+    border:2px solid white;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.rounded-plus:hover
+{
+  border:2px solid   #fff567;
+  transform: scale(1.2);
+}
+.rounded-plus span{
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+
+.sign-in-button{
+    position: relative;
+    top: 65%;
+    left: 80%;
+  width:70px;
+  height:24px;
+  background-color: red;
+  border:2px solid darkred;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.sign-in-button:hover
+{
+  border:2px solid   #fff567;
+  transform: scale(1.2);
+}
+.sign-in-button span{
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/*Digital production*/
+/*********/
+header .production {
+    margin:15px 0 0 0;
+    padding:10px;
+}
+
+header  .production span 
+{
+    color:orangered;
+    text-align:center;
+    display: block;
+}
+/*********/
+
+.camera
+{
+    position: relative;
+    width:91%;
+    min-height: 250px;
+    margin-left:3%;
+    margin-right:3%;
+}
+
+.camera-box{
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    
+    max-width: 350px;
+    width:45%;
+    min-width:230px;
+    
+    margin:10% 10% 10% 1%;
+    padding:5% 2% 5% 2%;
+
+    background-color: rgba(70, 78, 48, 0.5);
+    color: black;
+    text-align: center;
+}
+.camera-box h2{
+
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+
+
+/*contacts*/
+/****************************************/
+.copyrights 
+{
+    height:150px;
+    color:#fff;
+    padding:5%;
+}
+.copyrights div {
+    float: left;
+    margin:10px;
+    margin-left: 20px;
+}
+
+/* I-pad Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* I-pad  Portrait */
+@media screen and (max-width: 780px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
