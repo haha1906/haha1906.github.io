@@ -14,6 +14,7 @@
 
 </head>
 <body class="data_bg">
+  
 <!-- partial:index.partial.html -->
 <div id="contentContainer" class="container">
   <div class="row">
@@ -46,6 +47,7 @@
                   </div>
                 </div>
               </div>
+              
               <!-- Register -->
               <div class="col-sm-6 col-xs-12 reg-height">
                 <div class="row ">
@@ -79,7 +81,7 @@
                             <label>Expiry Date</label>
                           </th>
                           <th>
-                        <input id="expiry" placeholder="MM / YY" maxlength="5" class="form-control blue-border"  type="number" name="expiry">
+                        <input id="expiry" placeholder="MM - YY" maxlength="5" class="form-control blue-border"  type="alphanumeric" name="expiry">
                           </th>
                         </tr>
 
@@ -105,16 +107,23 @@
             
                       </table>
                       <div class="form-group">
-                      <input type="checkbox" name="terms" value="terms" validate>
-                      <label class="terms" for="terms"> I agree to the <a href="https://www.w3schools.com" target="_blank">
-                        <u>Terms and Conditions</u></a>.</label></input>
+                      <input type="checkbox" name="invoice" value="invoice">
+                      <label class="terms" for="invoice"> I want an invoice to my address</label></input>
                     </div>
-                        <div class="g-recaptcha" data-sitekey="https://www.w3schools.com"></div>
+                        <div class="g-recaptcha" data-sitekey="index_register.html"></div>
                       </div>
+                      <div class="card-row">
+                        <img src="img/amex.png" alt= "amex" >
+                        <img src="img/mastercard.png" alt="mastercard">
+                        <img src="img/visa.png" alt="visa">
+                      </div>
+                      
                       <div class="form-group">
-                        <button type="submit" id="register"  class=" btn-pointy btn-primary">Next</button>
+                        <button type="submit" id="register"  class=" btn-pointy btn-primary">Pay $300.00</button>
                       </div>
+
                     </form>
+                    
                   </div>
                 </div>
               </div>
@@ -125,6 +134,7 @@
     </div>
   </div>
 </div>
+
 
 <!-- Pop-up -->
 <div id="pop-up" class="modal">
@@ -141,7 +151,7 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
 <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js'></script>
 <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/additional-methods.js'></script>
-<script  src="./script_register.js"></script>
+<script  src="./script_payment.js"></script>
 
 
 
