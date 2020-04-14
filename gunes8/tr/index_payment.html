@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr" >
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Güneş Işını</title>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'>
+<link rel="stylesheet" href="../style/style_register.css">
+<link rel="icon" href="../img/favicon-72x72.png" sizes="16x16" type="image/png">
+</head>
+<body class="data_bg">
+  
+<!-- partial:index.partial.html -->
+<div id="contentContainer" class="container">
+  <div class="row">
+    <div id="realContent" class="col-xs-12">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-12 col-sm-offset-0">
+          <h1><br></h1>
+        </div>
+      </div>
+      <div class="row">
+        <section class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-12 col-sm-offset-0">
+          <div>
+            <div class="row">
+              <div class="col-sm-6 bg-primary info-height  bg-primary">
+                <div class="row" >
+                <!-- Information -->
+                <div class="col-xs-12">
+                  <h3 class="font2">BİLGİ</h3></div>
+                </div>
+                <div class="row"> 
+                  <div class="col-xs-12" >
+                    <p class="lead info-text">Sitemize kayıt ücretsiz  <span class="yellow">değildir.</span> Yıllık üyelik ücreti: 300.00$</p>
+                    <ul class="list-unstyled" style="line-height: 2.8; font-size: 1.5em; font-weight: 400;">
+                      <div class="form-group">
+                        <button  onclick="window.location.href='index_login.html'" type="button" class="btn-pointy text-primary btn-secondary">Hesabım var</button>
+                      </div>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Register -->
+              <div class="col-sm-6 col-xs-12 reg-height">
+                <div class="row ">
+                  <div class="col-xs-12">
+                    <h3 class="font2 left-padding text-primary">ÖDEME</h3></div>
+                  </div>
+                  <div class="col-12">
+                    <form id="signupForm" method="post" accept-charset="UTF-8" form action="javascript:showPopUp()" validate>
+                      
+                      <table class="tg">
+                        <tr>
+                          <th>
+                            <label>Kart üzerindeki isim</label>
+                          </th>
+                          <th>
+                            <input id="name" class="form-control blue-border" maxlength="40" type="text" name="name">
+                          </th>
+                        </tr>
+                        
+                        <tr>
+                          <th>
+                            <label>Kart Numarası</label>
+                          </th>
+                          <th>
+                        <input id="cardno" maxlength="16" class="form-control blue-border"  type="number" name="cardno">
+                          </th>
+                        </tr>
+                      
+                        <tr>
+                          <th>
+                            <label>Son Kullanma Tarihi</label>
+                          </th>
+                          <th>
+                        <input id="expiry" placeholder="MM - YY" maxlength="5" class="form-control blue-border"  type="text" name="expiry">
+                          </th>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <label>Güvenlik Kodu</label>
+                          </th>
+                          <th>
+                        <input id="cvc" maxlength="3" class="form-control blue-border"  type="number" name="cvc">
+                          </th>
+                        </tr>
+
+                        <tr>
+                          <th>
+                            <label>Posta kodu</label>
+                          </th>
+                          <th>
+                            <input id="zip" class="form-control blue-border" maxlength="12" type="text" name="zip">
+                          </th>
+                        </tr>
+                       
+                        
+            
+                      </table>
+                      <div class="form-group">
+                      <input type="checkbox" name="invoice" value="invoice">
+                      <label class="terms" for="invoice"> Adresime fatura istiyorum.</label></input>
+                    </div>
+                        <div class="g-recaptcha" data-sitekey="index_register.html"></div>
+                      </div>
+                      <div class="card-row">
+                        <img src="../img/amex.png" alt= "amex" >
+                        <img src="../img/mastercard.png" alt="mastercard">
+                        <img src="../img/visa.png" alt="visa">
+                      </div>
+                      
+                      <div class="form-group">
+                        <button type="submit" id="register"  class=" btn-pointy btn-primary">$300.00 öde</button>
+                      </div>
+
+                    </form>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Pop-up -->
+<div id="pop-up" class="modal">
+
+  <!-- Modal content -->
+  <div class="pop-up-content" >
+    <span class="pop-up-close">&times;</span>
+    <p>Ödemeniz doğrulanmadı. Lütfen kayıt olmadan önce ödemenizi doğrulayınız.</p>
+  </div>
+
+</div>
+
+
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+<script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js'></script>
+<script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/additional-methods.js'></script>
+<script  src="./script_payment.js"></script>
+
+
+
+</body>
+</html>
