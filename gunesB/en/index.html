@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Güneş Işını</title>
+  <!----------------------------------->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="description" content="html5 course" />
+    <meta name="keywords" content="gunes , isini , media , design , solutions"/>
+    <meta name="author" content="Author" />
+    
+
+<!--Style Css-->
+    <link rel="stylesheet" href="../style/style_pop.css">     
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/animate.css">
+<!--Icon-->
+    <link rel="icon" href="../img/favicon-72x72.png" sizes="16x16" type="image/png">
+</head>
+<body>
+<!--Container-->
+        <div id="primary" class=" container">
+<!--page's main header-->
+<!--------------------------------------------------------->
+        <header class="main-header">
+            <div>
+<!--navigation bar -->
+<!--------------------------------------------------------->
+            <nav class="main-navbar wow zoomIn">
+            <span class="bar-span" onclick="location.href='index.html';">
+                <img  src="../img/icon.png" alt="gunes-isini" class="bar-icon wow jello" data-wow-delay="1.5s"></span>
+            <ul class="font2">
+            <li class="wow slideInDown" data-wow-delay=".3s"><a href="#" onclick="showInfoPopUp()" >HOME</a></li>
+            <li class="wow slideInDown" data-wow-delay=".5s"><a href="index_login.html">ABOUT</a></li>
+            <li class="wow slideInDown" data-wow-delay=".7s"><a href="index_login.html">CONTACT</a></li>
+            </ul>
+        
+<!--clear both-->
+            <div class="clear"></div>
+            
+        </div>
+    </nav>
+</header> 
+<!--head titles -->
+<!--------------------------------------------------------->
+<div class="first-page wow fadeIn" data-wow-delay="2s" data-wow-duration="8s">
+
+
+    
+    <div class="head-title">
+        <h1 class="font3 wow fadeInDown" data-wow-delay="4s">güneş</h1>
+        <h1 class="font3 wow fadeInUp" data-wow-delay="4s">ışını</h1>
+        <h3 class="font3 wow fadeInUp" data-wow-delay="4.5s" data-wow-offset="-100">
+            Media Design Studio
+        </h3> 
+    </div>
+    <div class="page-button">
+        <div class = "flags wow fadeInLeftBig" data-wow-delay="3s" data-wow-duration="3s" data-wow-offset="-400"  >
+            <img class = "flag flag-active"  onclick="location.href='index_login.html';" alt="English" src="../img/uk_usa_flag.png" >
+            <img class = "flag-pixel"  src="../img/pixel.png" >
+            <img class = "flag flag-inactive"   onclick="location.href='../tr/index.html';" alt="Türkçe" src="../img/tr_flag.png" >
+        </div>
+        <div class = "sign-in-button font2 wow fadeInLeft" data-wow-delay="5s" data-wow-offset="-400" onclick="location.href='index_login.html';">
+            <span>SIGN IN</span>
+        </div>
+    </div>
+
+    
+        
+</div>
+
+
+            
+<!--Digital Production -->
+<!--------------------------------------------------------->
+            <div class="production font4 wow fadeInUp" data-wow-delay="6s" data-wow-offset="-100" >
+            <span >Digital Production has never been more affordable. Or powerful.</span>
+            </div>
+ <!--------------------------------------------------------->            
+
+
+
+<!--second page -->
+            <div class="camera wow slideInRight">
+                 <!--<img src="img/camera.jpg" alt="spotlight" width="100%">-->
+                <div class="camera-box wow fadeIn" data-wow-offset="100" data-wow-delay="1s" >
+                    <h1 id="about-us" class="font3 wow fadeInLeft"  data-wow-delay="1.5s">creative and innovative</h1>
+                    <p class="font2 wow fadeInLeft"  data-wow-delay="2s">Our studio is committed to providing you first-class media solutions and designs which inspire and delight. 
+                        <br><br>
+                        Get in contact today and let the adventures begin.
+                    </p>
+                </div>
+                
+
+            </div>
+            
+
+
+
+
+<!--contact-->
+<!--**********************************-->
+        <div id="contact" class="copyrights">
+            <div class="wow flipInX" data-wow-delay="2s" data-wow-offset="-300" >&copy; Copyright: GÜNEŞ IŞINI</div>
+            <div class="wow flipInX" data-wow-delay="2.5s" data-wow-offset="-300">&#9993; email: info@gunesisini.production</div>
+            </div>
+        </div>
+<!--pop-up-->
+<!--**********************************-->
+
+        <section id="infoPopUp" class="modal">
+            
+            <div class="modalWrap">
+                
+                <div class="modalInfo">
+                    <span id="closeButtonA" class="pop-up-close close-button topright" onclick="closeInfoPopUp()">&times;</span>  
+                    <div class="modalInside" >
+                        <h2>INFORMATION</h2>
+                        <p>Registration in our site is <span class="yellow">not</span> free. The membership fee is $300.00 per year.</p>
+                        <a href="#registerPopUp" onclick="showRegisterPopUp()">Have an account</a>
+                    </div>
+                </div>
+                <div id="registerPopUp"  class="modalForm">
+                    <span id="closeButtonB" class="pop-up-close close-button topright" onclick="closeInfoPopUp()">&times;</span>  
+                    <h2>Register</h2>
+                    <form id="signupForm" method="post" form action="javascript:showPendingPopUp()" validate >
+                        <div class="inputwrap">
+                            <label for="name">First name</label>
+                            <input name="name" type="text" minlength="2" id="name" validate required />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="lastname">Last name</label>
+                            <input name="lastname" type="text" minlength="2" id="lastname" validate required />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="email">Your email</label>
+                            <input name="email"  type="email" minlength="6" id="email" validate required/>
+                        </div>
+                        <div class="inputwrap">
+                            <label for="password">password</label>
+                            <input name="password" type="password" minlength="6"
+                             id="password" validate required/>
+                        </div>
+                        <div class="inputwrap">
+                            <label for="password_confirmation">confirm it</label>
+                            <input name="password_confirmation" type="password" id="pwpassword_confirmation2" required/>
+                            <span class="error"></span>
+                        </div>
+                        <div class="termsContainer">
+                            <label class="terms" for="terms">
+                                <input class="checkbox-box" type="checkbox" name="terms" checked value="terms" validate required>
+                                 I agree to the <a href="index_terms.html" target="_blank">
+                                <u>Terms and Conditions</u></a>.</label>
+
+                        </div>
+                        <button class="submit_button">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Pop-up -->
+<div id="pending-pop-up" class="pending">
+
+    <!-- Modal content -->
+    <div class="pop-up-content" >
+      <span class="pop-up-close" onclick="closePendingPopUp()">&times;</span>
+      <p class= "pop-up-text">  Pending... Your payment is not valid. Some text....</p>
+    </div>
+  
+  </div>
+
+
+        <script src="../script/wow.min.js"></script>
+        <script>new WOW().init(); </script>
+
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js'></script>
+    <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/additional-methods.js'></script>
+    <script src="script.js"></script>
+    <script src="script_register.js"></script>
+</body>
+</html>
