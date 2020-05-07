@@ -165,7 +165,7 @@
 .modalInfo a,
 .modalForm button {
   text-decoration: none;
-  color: #darkgoldenrod;
+  color: darkgoldenrod;
   background-color: #fff;
   padding: 10px 20px;
   font-size: 15px;
@@ -173,7 +173,7 @@
 }
 
 .modalInfo a:hover {
-  background-color: #e5ebe7;
+  background-color: darkgoldenrod;
 }
 
 .modalForm {
@@ -185,7 +185,7 @@
   margin-top: 74px;
   margin-left: 33px;
   margin-bottom: 30px;
-  color: #darkgoldenrod;
+  color: darkgoldenrod;
   letter-spacing: 1px;
 }
 
@@ -309,13 +309,13 @@ span.error {
   padding: 5px 15px;
   color: #fff;
   border: 1px solid #fff;
-  background: #3786be;
+  background: darkgoldenrod;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .modalForBuy .submit_button:hover {
-  background-color: #406e8f;
+  background-color: darkgoldenrod;
 }
 
 .modalInfo,
