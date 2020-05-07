@@ -279,9 +279,6 @@ height: 20px;
   cursor: pointer;
 }
 
-.modalForm button:hover {
-  background-color: darkgoldenrod;
-}
 
 .error {
   color: #bebe37;
