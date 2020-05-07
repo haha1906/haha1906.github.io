@@ -172,9 +172,6 @@
   transition: 0.3s;
 }
 
-.modalInfo a:hover {
-  background-color: darkgoldenrod;
-}
 
 .modalForm {
   background: #fff;
