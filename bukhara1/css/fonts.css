@@ -1,0 +1,48 @@
+/* instead Oriya MN */
+@font-face {
+  font-family: "Oriya";
+  src: url("../fonts/Oriya/Oriya.eot");
+  src: url("../fonts/Oriya/Oriya.eot");
+  src: url("../fonts/Oriya/Oriya?#iefix") format("embedded-opentype"),
+    url("../fonts/Oriya/Oriya.woff") format("woff"),
+    url("../fonts/Oriya/Oriya.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "AvenirBold";
+  src: url("../fonts/Avenir_bold/Avenir_bold.eot");
+  src: url("../fonts/Avenir_bold/Avenir_bold.eot");
+  src: url("../fonts/Avenir_bold/Avenir_bold?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Avenir_bold/Avenir_bold.woff") format("woff"),
+    url("../fonts/Avenir_bold/Avenir_bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("../fonts/Avenir_medium/Avenir_medium.eot");
+  src: url("../fonts/Avenir_medium/Avenir_medium.eot");
+  src: url("../fonts/Avenir_medium/Avenir_medium?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Avenir_medium/Avenir_medium.woff") format("woff"),
+    url("../fonts/Avenir_medium/Avenir_medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/Playfair_Display/PlayfairDisplay.eot");
+  src: url("../fonts/Playfair_Display/PlayfairDisplay.eot");
+  src: url("../fonts/Playfair_Display/PlayfairDisplay?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Playfair_Display/PlayfairDisplay.woff") format("woff"),
+    url("../fonts/Playfair_Display/PlayfairDisplay.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
