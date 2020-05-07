@@ -140,7 +140,7 @@
 
 .modalInfo {
   width: 57%;
-  background-color: #3786be;
+  background-color: darkgoldenrod;
   /*padding: 55px 50px;*/
 }
 
@@ -165,7 +165,7 @@
 .modalInfo a,
 .modalForm button {
   text-decoration: none;
-  color: #3786be;
+  color: #darkgoldenrod;
   background-color: #fff;
   padding: 10px 20px;
   font-size: 15px;
@@ -185,7 +185,7 @@
   margin-top: 74px;
   margin-left: 33px;
   margin-bottom: 30px;
-  color: #3786be;
+  color: #darkgoldenrod;
   letter-spacing: 1px;
 }
 
@@ -273,7 +273,7 @@ height: 20px;
 .modalForm button {
   display: inline-block;
   margin-left: 13px;
-  background: #3786be;
+  background: darkgoldenrod;
   color: #fff;
   border: none;
   cursor: pointer;
