@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="./css/fonts.css" />
+        <link rel="stylesheet" href="./css/animate.min.css">
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="icon" href="img/favicon-72x72.png" sizes="16x16" type="image/png">
+        <title>Digital Media Arts</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                        <div class="logoWrap">
+                            <img src="./img/logo.png" alt="logo" title="logo" class="logo" />
+                        </div>
+                    </div>
+                    <div class = "flags-small" >
+                        <img class = "flag-small flag-right flag-active"  onclick="location.href='#';" alt="English" src="img/uk_usa_flag.png" >
+                        <img class = "flag-pixel-small"  src="img/pixel_small.png" >
+                        <img class = "flag-small flag-left flag-inactive"   onclick="location.href='uz.html';" alt="Uzbek" src="img/uzb_flag.png" >
+                    </div>
+                    <div class="col-md-2 offset-md-6 col-sm-2 col-2  offset-4 offset-sm-4 none">
+                        <div class="burger">
+                            <button>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-6">
+                        <nav class="navigation">
+                            <ul class="navigation__links">
+                                <li class="navigation__link">
+                                    <a class="navigation__linkContent" href="#">Home</a>
+                                </li>
+                                <li class="navigation__link">
+                                    <a class="navigation__linkContent" href="#aboutUs">About</a>
+                                </li>
+                                <li class="navigation__link">
+                                    <a class="navigation__linkContent" href="#ourServices">Services</a>
+                                </li>
+                                <li class="navigation__link">
+                                    <a class="navigation__linkContent" href="#ourInspiration">Products</a>
+                                </li>
+                                <li class="navigation__link">
+                                    <a class="navigation__linkContent" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-5">
+                        <div class="banner__leftSide">
+                            <h1 class="banner__title wow fadeInUp" data-wow-delay=".5s">
+                                Bukhara <br />
+                                Media
+                            </h1>
+                            <p class="banner__subTitle wow fadeInUp" data-wow-delay=".5s">Digital Media Arts</p>
+                            <p class="banner__subTitle_second wow fadeInUp " data-wow-delay=".5s">& Engineering</p>
+                            <a class="banner__ReadMore button modalButton wow fadeInUp " data-wow-delay=".5s"
+                                href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class='banner__rightSide'>
+                            <form class='banner__form' action="">
+                                <div class="banner__inputWrap">
+                                    <input id="username" type="text" placeholder="username" />
+                                </div>
+                                <div class="banner__inputWrap banner__inputWrap_password">
+                                    <input id="username" type="password" placeholder="password" />
+                                </div>
+                                <button class='banner__submit' onclick="showSignInPopUp()">sign in</button>
+                            </form>
+                            <div class = "flags" >
+                                <img class = "flag flag-right flag-active"  onclick="location.href='#';" alt="English" src="img/uk_usa_flag.png" >
+                                <img class = "flag-pixel"  src="img/pixel.png" >
+                                <img class = "flag flag-left flag-inactive"   onclick="location.href='uz.html';" alt="Uzbek" src="img/uzb_flag.png" >
+                            </div>
+                            <div class="banner__imgWrap">
+                                <img src="./img/Koz.png" alt="Bukhara Media">
+                            </div>
+                            </rightSide>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <section id="aboutUs" class="aboutUs">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-7">
+                        <div class="aboutUS__photoWrap wow fadeInLeft" data-wow-duration="1.5s">
+                            <img src="./img/about_us.png" alt="about us">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 wow fadeInRight" data-wow-duration="1.5s">
+                        <h2 class="aboutUs__title sectionTitle">About Us</h2>
+                        <p class="aboutUs__subTitle">
+                            Now in our second decade of service, we are passionate about delivering quality video
+                            solutions based on a strong strategic foundation.
+                        </p>
+                        <p class="aboutUs__subTitle">
+                            A Central Asia-based media company, Bukhara Media began from a passion for storytelling. The
+                            use of film and video enables stories to not just be told but rather experienced by the
+                            audience. Beautiful imagery, music, lighting and editing allow our partners to re-create
+                            their stories to share them with others. Integration of Bukhara Media’s strategic audience
+                            testing elevates the reach, impact and effectiveness of each video we produce.
+                        </p>
+                        <button class="aboutUs_readMore blockButton modalButton">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ourServices" class="ourServices">
+            <div class="container">
+                <h2 class="sectionTitle ourServices__title">Our Services</h2>
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="serviceWrap serviceWrap__first wow fadeInUp" data-wow-duration="1.2s">
+                            <div class="service__imgWrap">
+                                <div class="service__img"></div>
+                            </div>
+                            <div class="service__contentWrap">
+                                <p class='service__subTitle'>High quality videography using state-of-the-art animation
+                                    and design software. Your video will be unlike anything you’ve ever imagined.</p>
+                                <a href='#' class="serviceReadMore modalButton">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="serviceWrap serviceWrap__second wow fadeInUp" data-wow-duration="1.2s">
+                            <div class="service__imgWrap">
+                                <div class="service__img"></div>
+                            </div>
+                            <div class="service__contentWrap">
+                                <p class='service__subTitle'>Bukhara Media's goal is to develop long-lasting
+                                    relationships with our clients. Our success depends on yours, and we value each
+                                    connection that we make.</p>
+                                <a href='#' class="serviceReadMore modalButton">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 justifyRight">
+                        <div class="serviceWrap serviceWrap__third wow fadeInUp" data-wow-duration="1.2s">
+                            <div class="service__imgWrap">
+                                <div class="service__img"></div>
+                            </div>
+                            <div class="service__contentWrap">
+                                <p class='service__subTitle'>Let the exotic spices and flavors of Bukhara add an
+                                    oriental charm to your media productions. From local hospitality to post-production
+                                    perfection, satisfaction awaits you.</p>
+                                <a href='#' class="serviceReadMore modalButton">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="ourServices__partnerWithUs blockButton modalButton">
+                    Partner With Us!
+                </a>
+            </div>
+        </section>
+
+        <section id="ourInspiration" class="ourInspiration">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ourInspiration__imgWrap wow fadeInLeft" data-wow-duration="1.5s">
+                            <img src="./img/our_Inspiration.svg" alt="our inspiration">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt">
+                        <div class="ourInspiration__contentWrap wow fadeInRight" data-wow-duration="1.5s">
+                            <h2 class="ourInspiration__title sectionTitle">
+                                Our Inspiration
+                            </h2>
+                            <p class="ourInspiration__subTitle">Bukhara Media takes its inspiration from the colors,
+                                textures and energy of ancient civilizations at the heart of the Silk Road. Shooting
+                                footage in this region is not like shooting anywhere else in the world and it provides a
+                                rich inspiration for our work. We think you'll find it novel and invigorating for you as
+                                well!</p>
+                            <a href="#" class="ourInspiration__readMore blockButton modalButton">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="digitalMediaArts">
+            <div class="container">
+                <div class="row">
+                    <div class="digitalMediaArts__contentWrap">
+                        <p class="digitalMediaArts__rotation">Everything Digital</p>
+                        <div class="digitalMediaArts__banerWrap">
+                            <img src="./img/digital_media.png" alt="Digital Media Arts">
+                            <div class="digitalMediaArts__title">
+                                <h2>Digital Media Arts <br></h2>
+                                <p><span id="fancy1">&</span> Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <div class="footerWrap">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-lg-4">
+                            <div class="footerLinks">
+                                <ul>
+                                    <li><a href="#">Tashkent, Uzbekistan</a></li>
+                                    <li><a href="#">Lörrach, Germany</a></li>
+                                    <li><a href="#">Ankara, Turkey</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footerLinks">
+                                <p class="title">
+                                    Bukhara Media <br>
+                                    Digital Media Arts and <br>
+                                    Engineering
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footerLinks">
+                                <p class="mail">email:</p>
+                                <a href="mailto:info@bukhara.uz"> info@bukhara.uz</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--
+        <section class="modal">
+            <div class="modalWrap">
+                <div class="modalInfo">
+                    <h2>INFORMATION</h2>
+                    <p>Registration in our site is <span>not</span> free. The membership fee is $300.00 per year.</p>
+                    <a href="#">Have an account</a>
+                </div>
+                <div class="modalForm">
+                    <h2>Register</h2>
+                    <form action="">
+                        <div class="inputwrap">
+                            <label for="name">First name</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="surname">Last name</label>
+                            <input type="text" id="surname" />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="password">password</label>
+                            <input type="password" id="password" />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="confirm">confirm it</label>
+                            <input type="password" id="confirm" />
+                            <span class="error"></span>
+                        </div>
+                        <div class="inputwrap inputwrap_checkbox">
+                            <label class="containerCheckbox">
+                                I agree to the <a href="#">Terms and Conditions</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                        <button class="submit_button" disabled>Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    -->
+        <section id="infoPopUp" class="modal">   
+            <div class="modalWrap">    
+                <div class="modalInfo">
+                    <span id="closeButtonA" class="closeModalButton pop-up-close close-button topright" >&times;</span>  
+                    <div class="modalInside" >
+                        <h2>INFORMATION</h2>
+                        <p>Registration in our site is <span class="yellow">not</span> free. The membership fee is $300.00 per year.</p>
+                        <a class="modalFormButton" href="#" >Have an account</a>
+                    </div>
+                </div>
+                <div id="registerPopUp"  class="modalForm">
+                    <span id="closeButtonB" class="closeModalButton pop-up-close close-button topright" >&times;</span>  
+                    <h2>Register</h2>
+                    <form id="signupForm" method="post" form action="javascript:showPendingPopUp()" validate >
+                        <div class="inputwrap">
+                            <label for="name">First name</label>
+                            <input name="name" type="text" minlength="2" id="name" validate required />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="lastname">Last name</label>
+                            <input name="lastname" type="text" minlength="2" id="lastname" validate required />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="email">Your email</label>
+                            <input name="email"  type="email" minlength="6" id="email" validate required/>
+                        </div>
+                        <div class="inputwrap">
+                            <label for="password">password</label>
+                            <input name="password" type="password" minlength="6"
+                             id="password" validate required/>
+                        </div>
+                        <div class="inputwrap">
+                            <label for="confirm">confirm it</label>
+                            <input name="confirm" type="password" id="confirm" required/>
+                            <span class="error"></span>
+                        </div>
+                        <div class="termsContainer">
+                            <label class="terms" for="terms">
+                                <input id="terms-check" class="checkbox-box" type="checkbox" name="terms" value="terms" validate required>
+                                 I agree to the <a href="#" onclick="showTermsPopUp()">
+                                <u>Terms and Conditions</u></a>.</label>
+    
+                        </div>
+                        <button class="submit_button">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+            <!-- pending pop-up -->
+        <div id="pending-pop-up" class="pending">
+            <div class="pop-up-content" >
+                <span class="pop-up-close" onclick="closePendingPopUp()">&times;</span>
+                <p class= "pop-up-div">  Your registration will be completed when our moderator reviews it. Thank you.</p>
+            </div>
+        </div>
+
+            <!-- wrong sign in pop-up -->
+        <div id="sign-in-pop-up" class="pending">
+            <div class="pop-up-content" >
+                <span class="pop-up-close" onclick="closeSignInPopUp()">&times;</span>
+                <p class= "pop-up-div">  Wrong username or password.</p>
+            </div>
+        </div>
+
+<!-- Terms Pop-up -->
+<div id="terms-pop-up" class="terms-container">
+    <div class="pop-up-content" >
+        <span class="pop-up-close"  onclick="closeTermsPopUp()">&times;</span>
+        <div class= "pop-up-div">
+          <h2 class="terms-header">TERMS & CONDITIONS</h3>
+          <h3 class="terms-sub-header">Information regarding the responsibility of the website of BUKHARA-MEDIA.</h4>
+            <div class= "gray">
+                <h4 class= "pop-up-text">  Unless otherwise stated, BUKHARA-MEDIA owns the copyright to the information and material, 
+                    as well as the visuals and their organization on the website.</h4>
+                <h6 class= "not-bold">This information <u> cannot be distributed, rented, duplicated, sub-licensed, modified or used for commercial purposes
+                     without written authorization from BUKHARA-MEDIA.</u> Information may be quoted by indicating the source. The email 
+                     address used for registration shall only be used for activation and to send information about your membership. 
+                     It shall not be shared with third parties or institutions except for legal obligations or after obtaining permission.
+                </h6>
+                <h6>
+                    Information on this website is provided "as is."
+                </h6>
+                <h6 class= "not-bold">
+                    BUKHARA-MEDIA does not guarantee the accuracy, sufficiency or completeness of this information, and explicitly declines
+                    any responsibility arising from mistakes or incompleteness. With this information, BUKHARA-MEDIA does not offer implicitly,
+                    explicitly or legally any guarantees, including to third parties, and including but not limited to the guarantees
+                    regarding ownership, salability, accuracy, reliability, certainty, suitability for a certain purpose and/or not 
+                    containing computer virus.
+                    <br>
+                    Even if they have been notified about the possibility of such damages and losses, BUKHARA-MEDIA and/or its personnel 
+                    shall be not be held responsible for any damages and losses, including but not limited to the damages and losses that 
+                    occur directly or indirectly due to any performance failure, mistake, insufficiency, outage, fault, delay in operation 
+                    and/or transport, computer virus and/or line and/or system failure during the use of this website.
+                    <br>
+                    Risks shall belong to the users in regards to the links provided on this website as well as to the links provided on 
+                    the other websites.
+                </h6>
+                <h6>
+                    BUKHARA-MEDIA has not researched or verified the accurateness of the information provided on these websites and the
+                    quality of the other links provided on these websites.  BUKHARA-MEDIA reserves the right to change without notification 
+                    all products and services as well as the pages, information and visual items on this website. 
+                </h6>
+                <h6>BukharaMedia Information Communication Services 
+                    <br>
+                    E-mail: <span class="not-bold">info@bukharamedia.uz</span> 
+                </h6>
+                
+            </div>
+            <h3 class="terms-sub-header">Investor Relations Web Site Support Services</h4>
+        </div>
+    <button class="terms_button terms_button_accept"onclick="acceptAndCloseTermsPopUp()">Accept</button>
+    <button class="terms_button terms_button_donotaccept" onclick="rejectAndCloseTermsPopUp()">Do not accept</button>
+    </div>
+
+        <script src="./scripts/wow.min.js"></script>
+        <script src='./scripts/main.js'></script>
+    </body>
+
+</html>
