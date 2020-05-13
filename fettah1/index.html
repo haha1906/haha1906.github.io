@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fettah Yapım</title>
+  <!----------------------------------->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="description" content="html5 course" />
+    <meta name="keywords" content="fettah , yapim , media , design , solutions"/>
+    <meta name="author" content="Author" />
+    
+
+<!--Style Css-->
+    <link rel="stylesheet" href="style/style_pop.css">     
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/animate.css">
+<!--Icon-->
+    <link rel="icon" href="img/favicon-72x72.png" sizes="16x16" type="image/png">
+</head>
+<body>
+<!--Container-->
+        <div id="primary" class=" container">
+<!--page's main header-->
+<!--------------------------------------------------------->
+        <header class="main-header">
+            <div>
+<!--navigation bar -->
+<!--------------------------------------------------------->
+            <nav class="main-navbar wow zoomIn">
+            <span class="bar-span" onclick="location.href='index.html';">
+                <img  src="img/icon.png" alt="fettah-yapim" class="bar-icon wow jello" data-wow-delay="1.5s"></span>
+            <ul class="font2">
+            <li class="wow slideInDown" data-wow-delay=".3s"><a href="#" onclick="showInfoPopUp()" >HOME</a></li>
+            <li class="wow slideInDown" data-wow-delay=".5s"><a href="#" onclick="showInfoPopUp()">ABOUT</a></li>
+            <li class="wow slideInDown" data-wow-delay=".7s"><a href="#" onclick="showInfoPopUp()">CONTACT</a></li>
+            </ul>
+        
+<!--clear both-->
+            <div class="clear"></div>
+            
+        </div>
+    </nav>
+</header> 
+<!--head titles -->
+<!--------------------------------------------------------->
+<div class="first-page wow fadeIn" data-wow-delay="2s" data-wow-duration="8s">
+
+
+    
+    <div class="head-title">
+        <h1 class="font3 wow fadeInDown" data-wow-delay="4s">fettah</h1>
+        <h1 class="font3 wow fadeInUp" data-wow-delay="4s">yapım</h1>
+        <h3 class="font3 wow fadeInUp" data-wow-delay="4.5s" data-wow-offset="-100">
+            Media Design Studio
+        </h3> 
+    </div>
+    <div class="page-button">
+        <div class = "flags wow fadeInLeftBig" data-wow-delay="3s" data-wow-duration="3s" data-wow-offset="-400"  >
+            <img class = "flag flag-active"  onclick="location.href='#';" alt="English" src="img/uk_usa_flag.png" >
+            <img class = "flag-pixel"  src="img/pixel.png" >
+            <img class = "flag flag-inactive"   onclick="location.href='tr/index.html';" alt="Türkçe" src="img/tr_flag.png" >
+        </div>
+        <div class = "sign-in-button font2 wow fadeInLeft" data-wow-delay="5s" data-wow-offset="-400" onclick="showInfoPopUp()">
+            <span>SIGN IN</span>
+        </div>
+    </div>
+
+    
+        
+</div>
+
+
+            
+<!--Digital Production -->
+<!--------------------------------------------------------->
+            <div class="production font4 wow fadeInUp" data-wow-delay="6s" data-wow-offset="-100" >
+            <span >Digital Production has never been more affordable. Or powerful.</span>
+            </div>
+ <!--------------------------------------------------------->            
+
+
+
+<!--second page -->
+            <div class="camera wow slideInRight">
+                 <!--<img src="img/camera.jpg" alt="spotlight" width="100%">-->
+                <div class="camera-box wow fadeIn"  data-wow-delay="1s" >
+                    <h1 id="about-us" class="font3 wow fadeInLeft"  data-wow-delay="1.5s">creative and innovative</h1>
+                    <p class="font2 wow fadeInLeft"  data-wow-delay="2s">Our studio is committed to providing you first-class media solutions and designs which inspire and delight. 
+                        <br><br>
+                        Get in contact today and let the adventures begin.
+                    </p>
+                </div>
+                
+
+            </div>
+            
+
+
+
+
+<!--contact-->
+<!--**********************************-->
+        <div id="contact" class="copyrights">
+            <div class="wow flipInX" data-wow-delay="2s" data-wow-offset="-300" >&copy; Copyright: FETTAH YAPIM</div>
+            <div class="wow flipInX" data-wow-delay="2.5s" data-wow-offset="-300">&#9993; email: info@fettahyapim.production</div>
+            </div>
+        </div>
+<!--pop-up-->
+<!--**********************************-->
+
+        <section id="infoPopUp" class="modal">
+            
+            <div class="modalWrap">
+                
+                <div class="modalInfo">
+                    <span id="closeButtonA" class="pop-up-close close-button topright" onclick="closeInfoPopUp()">&times;</span>  
+                    <div class="modalInside" >
+                        <h2>INFORMATION</h2>
+                        <p>Registration in our site is <span class="yellow">not</span> free. The membership fee is $300.00 per year.</p>
+                        <a href="#" onclick="showRegisterPopUp()">Have an account</a>
+                    </div>
+                </div>
+                <div id="registerPopUp"  class="modalForm">
+                    <span id="closeButtonB" class="pop-up-close close-button topright" onclick="closeRegisterPopUp()">&times;</span>  
+                    <h2>Register</h2>
+                    <form id="signupForm" method="post" form action="javascript:showPendingPopUp()" validate >
+                        <div class="inputwrap">
+                            <label for="name">First name</label>
+                            <input name="name" type="text" minlength="2" id="name" validate required />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="lastname">Last name</label>
+                            <input name="lastname" type="text" minlength="2" id="lastname" validate required />
+                        </div>
+                        <div class="inputwrap">
+                            <label for="email">Your email</label>
+                            <input name="email"  type="email" minlength="6" id="email" validate required/>
+                        </div>
+                        <div class="inputwrap">
+                            <label for="password">password</label>
+                            <input name="password" type="password" minlength="6"
+                             id="password" validate required/>
+                        </div>
+                        <div class="inputwrap">
+                            <label for="password_confirmation">confirm it</label>
+                            <input name="password_confirmation" type="password" id="password_confirmation" required/>
+                            <span class="error"></span>
+                        </div>
+                        <div class="termsContainer">
+                            <label class="terms" for="terms">
+                                <input id="terms-check" class="checkbox-box" type="checkbox" name="terms" value="terms" validate required>
+                                 I agree to the <a href="#" onclick="showTermsPopUp()">
+                                <u>Terms and Conditions</u></a>.</label>
+
+                        </div>
+                        <button class="submit_button">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Pop-up -->
+<div id="pending-pop-up" class="pending">
+
+    <!-- Modal content -->
+    <div class="pop-up-content" >
+      <span class="pop-up-close" onclick="closePendingPopUp()">&times;</span>
+      <p class= "pop-up-div">  Your registration will be completed when our moderator reviews it. Thank you.</p>
+    </div>
+</div>
+
+<!-- Terms Pop-up -->
+<div id="terms-pop-up" class="terms-container">
+
+    <!-- Modal content -->
+    <div class="pop-up-content" >
+      <span class="pop-up-close"  onclick="closeTermsPopUp()">&times;</span>
+      <div class= "pop-up-div">
+          <h2 class="terms-header">TERMS & CONDITIONS</h3>
+          <h3 class="terms-sub-header">Information regarding the responsibility of the website of FETTAH YAPIM.</h4>
+            <div class= "gray">
+                <h4 class= "pop-up-text">  Unless otherwise stated, FETTAH YAPIM owns the copyright to the information and material, 
+                    as well as the visuals and their organization on the website.</h4>
+                <h6 class= "not-bold">This information <u> cannot be distributed, rented, duplicated, sub-licensed, modified or used for commercial purposes
+                     without written authorization from FETTAH YAPIM.</u> Information may be quoted by indicating the source. The email 
+                     address used for registration shall only be used for activation and to send information about your membership. 
+                     It shall not be shared with third parties or institutions except for legal obligations or after obtaining permission.
+                </h6>
+                <h6>
+                    Information on this website is provided "as is."
+                </h6>
+                <h6 class= "not-bold">
+                    FETTAH YAPIM does not guarantee the accuracy, sufficiency or completeness of this information, and explicitly declines
+                    any responsibility arising from mistakes or incompleteness. With this information, FETTAH YAPIM does not offer implicitly,
+                    explicitly or legally any guarantees, including to third parties, and including but not limited to the guarantees
+                    regarding ownership, salability, accuracy, reliability, certainty, suitability for a certain purpose and/or not 
+                    containing computer virus.
+                    <br>
+                    Even if they have been notified about the possibility of such damages and losses, FETTAH YAPIM and/or its personnel 
+                    shall be not be held responsible for any damages and losses, including but not limited to the damages and losses that 
+                    occur directly or indirectly due to any performance failure, mistake, insufficiency, outage, fault, delay in operation 
+                    and/or transport, computer virus and/or line and/or system failure during the use of this website.
+                    <br>
+                    Risks shall belong to the users in regards to the links provided on this website as well as to the links provided on 
+                    the other websites.
+                </h6>
+                <h6>
+                    FETTAH YAPIM has not researched or verified the accurateness of the information provided on these websites and the
+                    quality of the other links provided on these websites.  FETTAH YAPIM reserves the right to change without notification 
+                    all products and services as well as the pages, information and visual items on this website. 
+                </h6>
+                <h6>Fettah Yapım Information Communication Services 
+                    <br>
+                    E-mail: <span class="not-bold">info@fettahyapim.production</span> 
+                </h6>
+                
+            </div>
+            <h3 class="terms-sub-header">Investor Relations Web Site Support Services</h4>
+    </div>
+    <button class="terms_button terms_button_accept"onclick="acceptAndCloseTermsPopUp()">Accept</button>
+    <button class="terms_button terms_button_donotaccept" onclick="rejectAndCloseTermsPopUp()">Do not accept</button>
+    </div>
+</div>
+
+        <script src="script/wow.min.js"></script>
+        <script>new WOW().init(); </script>
+
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js'></script>
+    <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/additional-methods.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>

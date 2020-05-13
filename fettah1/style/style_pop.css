@@ -1,0 +1,430 @@
+  /* The Close Button */
+
+
+  .close-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+  }
+  .pop-up-close {
+    color: rgb(47, 1, 1);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .pop-up-close:hover,
+  .pop-up-close:focus {
+    color: rgb(255, 29, 29);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .topright {
+    position: relative;
+    float: right;
+    top: 0px;
+  }
+
+  .yellow{
+      color: yellow;
+      letter-spacing: 0.01em;
+  }
+
+  .terms{
+    margin-top: 30px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+}
+.terms-link{
+    text-decoration: underline;
+    color: blue;
+    letter-spacing: 0.01em;
+}
+.termsContainer{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.checkbox-box{
+    margin-top: 10px;
+}
+.help-block{
+    font-size: 9px;
+    color:darkgray;
+}
+
+  
+  /* Modal Content/Box */
+
+  .modal,
+.modalForBuy {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1991;
+  overflow: scroll;
+  font-family: "Oriya", sans-serif;
+  
+}
+
+  .pop-up-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    padding-left: 10%;
+    border: 1px solid #888;
+    width: 70%;
+    min-height: 100px;
+  }
+  .pop-up-div{
+      margin-top: 30px;
+  }
+  .pending {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1993;
+  overflow: scroll;
+  font-family: "Oriya", sans-serif;
+}
+.terms-container {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1992;
+  overflow: scroll;
+  font-family: "Oriya", sans-serif;
+}
+
+
+
+/* modal */
+.modal,
+.modalForBuy {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1991;
+  overflow: scroll;
+  font-family: "Oriya", sans-serif;
+  
+}
+
+.modalWrap {
+  margin-top: 113px;
+  margin-left: 179px;
+  max-width: 708px;
+  height: 505px;
+  display: flex;
+}
+
+.modalInfo {
+  width: 57%;
+  background-color: darkgoldenrod;
+  /*padding: 55px 50px;*/
+}
+
+.modalInside {
+    padding: 75px 40px;
+}
+
+.modalInfo h2 {
+  color: #fff;
+  letter-spacing: 1.7px;
+  margin-bottom: 34px;
+}
+
+.modalInfo p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 65px;
+  letter-spacing: 0.01em;
+}
+
+.modalInfo a,
+.modalForm button {
+  text-decoration: none;
+  color: darkgoldenrod;
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+
+.modalForm {
+  background: #fff;
+  display: none;
+}
+
+.modalForm h2 {
+  margin-top: 74px;
+  margin-left: 33px;
+  margin-bottom: 30px;
+  color: darkgoldenrod;
+  letter-spacing: 1px;
+}
+
+.modalForm form {
+  margin-left: 22px;
+  width: 94%;
+  display: block;
+}
+
+.modalForm .inputwrap {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 13px;
+  position: relative;
+}
+.modalForm .inputwrap label {
+ letter-spacing: 0.01em;
+  }
+
+.modalForm .inputwrap input {
+  background: none;
+  border: 1px solid #3786be;
+  border-radius: 8px;
+  width: 57%;
+  padding: 5px 0 5px 15px;
+  outline: none;
+}
+
+.modalForm .inputwrap input[type="password"] {
+  padding: 0 0 0 11px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 7px;
+}
+
+.checkTerms{
+width: 20px;
+height: 20px;
+}
+
+.modalForm .inputwrap_checkbox {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.modalForm .inputwrap_checkbox input {
+  width: auto;
+}
+
+.inputwrap_checkbox .containerCheckbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+.inputwrap_checkbox .containerCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.inputwrap_checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 16px;
+  background-color: #fff;
+  border: 1px solid #707070;
+}
+
+.modalForm button {
+  display: inline-block;
+  margin-left: 13px;
+  background: darkgoldenrod;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+.error {
+  color: #bebe37;
+}
+
+span.error {
+  position: absolute;
+  top: 117%;
+  left: 43%;
+  font-size: 9px;
+}
+
+.modalForBuy .modalWrap {
+  border: 2px solid #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalForBuy .modalWrap h2 {
+  margin-top: 30px;
+}
+
+.modalForBuy .submit_button {
+  padding: 5px 15px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: darkgoldenrod;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.modalForBuy .submit_button:hover {
+  background-color: darkgoldenrod;
+}
+
+.modalInfo,
+.modalForm {
+  min-height: 520px;
+}
+
+.terms-header{
+  color: red;
+  margin-bottom: 14px;
+  font-weight:normal;
+  font-family: 'Times New Roman', Times, serif;
+}
+.terms-sub-header{
+  margin-bottom: 10px;
+  font-weight:normal;
+  padding-bottom: 6px;
+  border-bottom: darkgray 1px dotted;
+  font-family: 'Times New Roman', Times, serif;
+}
+.gray{
+  color: gray;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+  padding-right: 4%;
+}
+.gray h4, h5, h6{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+.not-bold{
+  font-weight:normal;
+}
+.terms_button{
+  padding: 6px 15px 6px 15px;
+  border-radius: 6px;
+  
+}
+.terms_button_accept{
+  border: lightgreen solid 3px;
+}
+.terms_button_donotaccept{
+  border: darkgray solid 3px;
+}
+
+@media screen and (max-width: 1199px) {
+
+
+  .modalWrap {
+    margin: 30px auto;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  
+  .modalInside {
+    padding: 75px 10px;
+}
+  .modalWrap {
+    margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modalInfo {
+    min-height: 310px;
+  }
+
+  .modalInfo,
+  .modalForm {
+    text-align: center;
+    min-width: 404px;
+  }
+
+  .modalForm h2 {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .modalForm form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .modalForm .inputwrap {
+    padding: 0;
+    justify-content: space-around;
+  }
+  input {
+    max-width: 200px;
+  }
+
+  .pop-up-content {
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 15px;
+    padding-left: 15px;
+    width: 80%;
+  }
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .modalInfo,
+  .modalForm {
+    min-width: 100%;
+  }
+
+  .modalForm .inputwrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pop-up-content {
+    width: 100%;
+  }
+}
