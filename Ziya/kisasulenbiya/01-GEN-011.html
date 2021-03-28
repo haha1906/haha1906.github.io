@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#083F0E">
+<title>Tekvin 11</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"ft\">Hz. İbrahim'in (a.s.) babası Âzer ismi ile de biliniyordu. (En'am sûresi, 74).</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"ft\">Bu şecere İbn İshak'ın “Siyer” kitabında olduğu gibi, İbn Sa'd'ın “Tabakât”ında, Taberî, İbn Kuteybe, Mesûdî ve İbn Asâkir'in eserleri gibi başka birçok metinde de yer almıştır.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"ft\"><span class=\"wh\">فَلَمَّا جَنَّ عَلَيْهِ اللَّيْلُ رَأَىٰ كَوْكَبًا ۖ قَالَ هَٰذَا رَبِّي ۖ فَلَمَّا أَفَلَ قَالَ لَا أُحِبُّ الْآفِلِينَ ۝ فَلَمَّا رَأَى الْقَمَرَ بَازِغًا قَالَ هَٰذَا رَبِّي </span> </span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"ft\"><span class=\"wh\">فَلَمَّا أَفَلَ قَالَ لَئِنْ لَمْ يَهْدِنِي رَبِّي لَأَكُونَنَّ مِنَ الْقَوْمِ الضَّالِّينَ ۝ فَلَمَّا رَأَى الشَّمْسَ بَازِغَةً قَالَ هَٰذَا رَبِّي هَٰذَا أَكْبَرُ </span> </span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"ft\">Bakara sûresi, 2/131.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"ft\">Şu'arâ sûresi, 26/70-74 ayetler.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"ft\">Saffât 91-93 ayetler.</span></div>",
+    "F-7": "<div class=\"footnote-p\"><span class=\"ft\">Enbiyâ 58. ayet.</span></div>",
+    "F-8": "<div class=\"footnote-p\"><span class=\"ft\">Enbiyâ 62-67 ayetler.</span></div>",
+    "F-9": "<div class=\"footnote-p\"><span class=\"fr\"></span><span class=\"ft\">Birçok neşriyatta bu kralın isminin Nemrut olduğu nakledilmiştir.</span></div>",
+    "F-10": "<div class=\"footnote-p\"><span class=\"ft\">Bakara 258. ayet.</span></div>",
+    "F-11": "<div class=\"footnote-p\"><span class=\"ft\">Bu maksatla büyük bir çukur kazdırıp içine uzun süre yanan odunları yığdırdı. Bazı alimlerin yazdıklarına göre, odunları yığması üç ay sürmüştü (İbn İyâs: “Bedâ'i u'z-zühûr”).</span></div>",
+    "F-12": "<div class=\"footnote-p\"><span class=\"ft\">Enbiyâ sûresi, 21/69.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 4 }, { start: 6, end: 13 }, { start: 15, end: 19 }, { start: 21, end: 22 }];
+var hasIntro = false;
+var baseRef  = "01-GEN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='01-GEN-010.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector">&nbsp;&nbsp;Tekvin&nbsp;&nbsp;</span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;11&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='01-GEN-012.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="m"> <a id="v18"></a>Pelek'in oğlu Reu doğdu,<span id="bookmarks-18"></span> <a id="v20"></a>Reu'dan Seruk,<span id="bookmarks-20"></span> <a id="v22"></a>Seruk'tan da Nahor dünyaya geldi.<span id="bookmarks-22"></span> <a id="v24"></a>Nahor'dan ise İbrahim aleyhisselamın babası olan Terah<span class="footnote selectable" id="F-0"><sup>a</sup></span> dünyaya geldi.<span class="footnote selectable" id="F-1"><sup>b</sup></span><span id="bookmarks-24-25"></span></div><span id="bookmarks-24-25"></span><a id="v2"></a>
+<div class="p"></div><div class="image-block"><span class="image"><img src="images/ibrahim-as.png" /></span></div><span id="bookmarks2"></span>
+<div class="mte"><div id="mte1">İBRAHİM (A.S.) KISSASI</div></div><span id="bookmarks2"></span><a id="v101"></a>
+<div class="pc">قُلْ صَدَقَ اللَّهُ ۗ فَاتَّبِعُوا مِلَّةَ إِبْرَاهِيمَ حَنِيفًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ</div>
+<div class="pm">«De ki: “Allah doğru söyledi. Öyleyse Allah'ı bir tanıyan (Hanif)ler olarak İbrahim'in milletine uyun. O, müşriklerden değildi”.» (Âl-i İmrân sûresi, 3/95)<span id="bookmarks-101"></span></div>
+
+<div class="s"><div id="s1">İBRAHİM PEYGAMBERİMİZİN BABASI</div></div><span id="bookmarks-101"></span><a id="v102"></a>
+<div class="p">Terah'ın İbrahim, Nahor ve Haran adında üç oğlu oldu.<span id="bookmarks-102"></span> <a id="v28"></a>O zamanlar Kildanilerin Ur isimli şehrinde yaşıyorlardı.<span id="bookmarks28"></span> <a id="v27"></a>Haran evlenerek Lût isimli bir oğla,<span id="bookmarks27"></span> <a id="v29"></a>Milka ve Yiska isimli iki kıza sahip oldu.<span id="bookmarks29"></span> <a id="v28"></a>Daha sonra Haran, henüz babası sağken doğduğu ülkede, Ur şehrinde öldü.<span id="bookmarks28"></span> <a id="v29"></a>Hz. İbrahim (a.s.) de evlendi.<span id="bookmarks29"></span> <a id="v30"></a>Fakat karısı Sara hiç hamile olamıyordu.<span id="bookmarks30"></span> <a id="v31"></a>Bir gün Terah, çocuklarını alıp Kenan diyarına doğru yola çıktı. <span class="it">Ortada çöl olduğu için onlar önce kuzeydeki Harran şehrine varıp, sonra güneye Kenan'a gitmek zorundaydılar. </span> Fakat Harran'a geldiklerinde, orada kalıp yerleştiler.<span id="bookmarks31"></span></div>
+
+<div class="s"><div id="s2">Hz. İbrahim'in (a.s.) çocukluğu</div></div><span id="bookmarks31"></span><a id="v103"></a>
+<div class="p"><span class="it">Birçok kitapta yazdığı üzere, İbrahim aleyhisselamın kavmi cansız putlara tapar, tek olan Allah'ı kabul etmezdi. Hazreti İbrahim ise: “Dünyanın bir sahibi var mı? Bütün bu alemlerin rabbi kimdir?” gibi sorulara cevap arardı. </span><span id="bookmarks-103"></span></div>
+
+<div class="s"><div id="s3">Allah'ı arayış</div></div><span id="bookmarks-103"></span><a id="v3"></a>
+<div class="p"><span class="it">Hz. İbrahim (a.s.) </span> <span class="bdit">«Üzerine gece karanlığı basınca bir yıldız gördü ve dedi ki: “Bu benim rabbimdir.” Fakat (yıldız) kayboluverince: “Ben kaybolup gidenleri sevmem” demişti. Ardından Ay'ı doğarken görünce: “Bu benim rabbim” dedi.»<span class="footnote selectable" id="F-2"><sup>c</sup></span> </span> <span class="it">(Fakat Ay da batıp gitti.) </span> <span class="bdit">«Ay da batınca: “Rabbim bana doğru yolu göstermezse elbette yoldan sapmışlardan olurum” dedi. Sonra Güneş'i (etrafa ışıklar saçarak) doğar görünce: “İşte bu benim rabbim, bu en büyük.”» dedi. Ama o da kayboluverince,<span class="footnote selectable" id="F-3"><sup>d</sup></span> </span> <span class="it">bunların hepsini yaratan ve bunlardan üstün bir zat olması gerektiğini düşündü ve sonra dedi ki: </span> <span class="wh">يَا قَوْمِ إِنِّي بَرِيءٌ مِمَّا تُشْرِكُونَ ۝ إِنِّي وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا ۖ وَمَا أَنَا مِنَ الْمُشْرِكِينَ </span><span class="bdit">«Ey kavmim, doğrusu ben sizin şirk koşmakta olduklarınızdan uzağım. Gerçek şu ki, ben bir Hanif olarak yüzümü gökleri ve yeri yaratana çevirdim. Ve ben müşriklerden değilim.» </span> . <span class="it">(En'âm sûresi, 6/76-79) </span></div>
+<div class="b">&nbsp;</div><span id="bookmarks3"></span><span id="bookmarks3"></span><a id="v4"></a>
+<div class="p"><span class="it">Sonra günlerden birinde Allah (azze ve celle) ona vahyederek seslendi: </span> <span class="wh">أَسْلِمْ </span><span class="bdit">«Eslim»</span> <span class="it">dedi. Anlamı: «Bana teslim ol.» idi. İbrahim aleyhisselam da:</span> <span class="wh">أَسْلَمْتُ لِرَبِّ الْعَالَمِينَ </span><span class="bdit">«Eslemtü li rabbil âlemîn»</span> <span class="footnote selectable" id="F-4"><sup>e</sup></span> <span class="it">yani: </span> <span class="bdit">«Alemlerin Rabbine teslim oldum»</span> <span class="it">diyerek yanıtladı. Bundan sonra putlara tapan babasını ve kavmini, putlara tapmayı bırakıp, yegane Allah'a, yerin ve göğün sahibine dönmeye davet etti. </span><span id="bookmarks4"></span></div>
+
+<div class="s"><div id="s4">PUTLARI PARÇALAMASI</div></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="bdit">«Hani, babasına ve kavmine: “Siz neye kulluk ediyorsunuz?” demişti. “Putlara kulluk ediyoruz ve etmeye de devam edeceğiz.” demişlerdi. Dedi ki: “Peki, dua ettiğiniz zaman onlar sizi işitiyorlar mı? Ya da size bir yararları veya zararları dokunuyor mu?” “Hayır” dediler. “Fakat biz atalarımızı böyle yaparlarken bulduk”.» </span> <span class="footnote selectable" id="F-5"><sup>f</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks5"></span><span id="bookmarks5"></span><a id="v6"></a>
+<div class="p">Bir gün bayram vardı. Herkes bayrama gittiği sırada, İbrahim (a.s.) balta alıp puthaneye gitti ve putların önünde duran yemekleri görüp dedi ki: <span class="bdit">«“Yemek yemiyor musunuz? Size ne oluyor ki konuşmuyorsunuz?” Derken onların üstüne yürüyüp sağ eliyle bir darbe indirdi.» </span><span class="footnote selectable" id="F-6"><sup>g</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks6"></span><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p">Kur'an-ı Kerîm, Enbiya suresinde şöyle nakleder: <span class="bdit">«Sonunda İbrahim onları paramparça etti, en büyükleri hariç...» </span><span class="footnote selectable" id="F-7"><sup>h</sup></span> <span class="it">Ardından İbrahim aleyhisselam baltayı büyüğünün boynuna asıp puthaneyi terk etti. </span></div>
+<div class="b">&nbsp;</div><span id="bookmarks7"></span><span id="bookmarks7"></span><a id="v8"></a>
+<div class="p"><span class="it">Biraz vakitten sonra insanlar bayramdan gelip putların kırıldığını gördüler ve öfkelenip İbrahim aleyhisselama geldiler: </span> <span class="bdit">«Ey İbrahim, bunu ilahlarımıza sen mi yaptın?»</span> <span class="it">İbrahim (a.s.) cevap verdi:</span> <span class="bdit">«Hayır! Bunu şu büyükleri yapmıştır. Konuşabiliyorlarsa, onlara sorun bakalım!» </span><span class="footnote selectable" id="F-8"><sup>i</sup></span> <span class="it">dedi alay ederek. Sonra onlar: “Putların konuşamayacağını biliyorsun ki” dediler. Bunun üzerine İbrahim (a.s.): </span> <span class="bdit">«Öyleyse neden Allah'ı bırakıp da sizlere yararı ve zararı dokunmayan şeylere kulluk ediyorsunuz?»</span> <span class="it">dedi. </span><span id="bookmarks8"></span></div>
+
+<div class="s"><div id="s5">Resûlallah ateşe atılıyor</div></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><span class="it">Daha sonra, o kavmin kralı<span class="footnote selectable" id="F-9"><sup>j</sup></span> Hz. İbrahim'i (a.s.) huzuruna çağırtıp: “Senin tanrın kim? Hiç onu gördün mü?” diye sordu. Allah'ın Resulü cevapladı:</span> <span class="wh">رَبِّيَ الَّذِي يُحْيِي وَيُمِيتُ </span><span class="bdit">«Benim tanrım diriltir ve öldürür.»</span> <span class="it">Bunun üzerine kral: “Bunu ben de yapabilirim. İki insan getirilse, birini öldürür, birini ise affederim.” dedi. İbrahim aleyhisselam: </span> <span class="wh">فَإِنَّ اللَّهَ يَأْتِي بِالشَّمْسِ مِنَ الْمَشْرِقِ فَأْتِ بِهَا مِنَ الْمَغْرِبِ </span><span class="bdit">«Şüphe yok, Allah Güneş'i doğudan getirir, (hadi) sen de onu batıdan getir.» </span><span class="footnote selectable" id="F-10"><sup>k</sup></span> <span class="it">Kral cevap veremedi, susup kaldı. </span></div>
+<div class="b">&nbsp;</div><span id="bookmarks9"></span><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p"><span class="it">Bundan sonra kral, Allah Resûlü'nü ateşe atarak öldürmeye karar verdi.</span><span class="footnote selectable" id="F-11"><sup>l</sup></span><span id="bookmarks10"></span> <a id="v11"></a><span class="it">Her şey hazır olduğunda, büyük bir ateş yakıp, Hz. İbrahim'i (a.s.) alevlerin içine atacaktı. </span><span id="bookmarks11"></span></div>
+
+<div class="s"><div id="s6">KISSADAN HİSSE</div></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="it">İbrahim aleyhisselam Allah'a tevekkül ettiği için, kendisini ateşte yakacaklarını söylemelerine rağmen imanından vazgeçmedi. Böyle durumlarda her bir mü'min, ümidini Allah'ın nusretine bağlamalı. Eğer Allah isterse, ateş belasından da su belasından da kurtarır. Fakat kurtarmasa bile bizim imanımızı elimizden bırakmamamız lazım. </span></div>
+<div class="b">&nbsp;</div><span id="bookmarks12"></span><span id="bookmarks12"></span><a id="v13"></a>
+<div class="p"><span class="it">İbrahim aleyhisselam alevlere atıldığında Allah-u Teâlâ onu muhafaza etti. Allah (azze ve celle) ateşe emretti:</span> <span class="wh">قُلْنَا يَا نَارُ كُونِي بَرْدًا وَسَلَامًا عَلَىٰ إِبْرَاهِيمَ </span><span class="bdit">«Ey ateş! İbrahim'e karşı serin ve selamet ol!» </span><span class="footnote selectable" id="F-12"><sup>m</sup></span> <span class="it">Her ne kadar kavmi, Hazreti İbrahim'e kötülük yapmayı istemiş olsa da Allah, onları kaybedenlerden yaptı. </span><span id="bookmarks13"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>
