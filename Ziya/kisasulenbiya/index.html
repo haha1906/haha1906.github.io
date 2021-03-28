@@ -14,6 +14,27 @@
 <script type='text/javascript' src='js/app-builder-menus.js'></script>
 <script type='text/javascript' src='js/app-builder-video.js'></script>
 <script type='text/javascript' src='js/book-names.js'></script>
+  <script>
+// SETTINGS: Adjust these for the current HTML Output, as hosted on a website.
+var folder = "";                    // Relative path to the HTML files.  e.g. "../web/"
+var redirPage = "01-GEN-000.html";  // Path to default page if reference not found. e.g. "../web/01-GEN-000.html"
+var booksPresent =                  // Specify the books that are present
+	['GEN', 'EXO', 'RUT', '1SA', '2SA', 'PRO', 'JON', 'MRK', 'LUK', 'JHN', 'ACT', 'GAL', 'EPH', 'PHP', 'COL', '1TH', '2TH', '1TI', '2TI', 'TIT', 'PHM', 'HEB', 'JAS', '1PE', '2PE'];
+// End of settings
+
+// Prefix for each book
+var bookPrefix = {'GEN': '01', 'EXO': '02', 'LEV': '03', 'NUM': '04', 'DEU': '05', 'JOS': '06', 'JDG': '07', 'RUT': '08', '1SA': '09', '2SA': '10', '1KI': '11', '2KI': '12', '1CH': '13', '2CH': '14', 'EZR': '15', 'NEH': '16', 'EST': '17', 'JOB': '18', 'PSA': '19', 'PRO': '20', 'ECC': '21', 'SNG': '22', 'ISA': '23', 'JER': '24', 'LAM': '25', 'EZK': '26', 'DAN': '27', 'HOS': '28', 'JOL': '29', 'AMO': '30', 'OBA': '31', 'JON': '32', 'MIC': '33', 'NAM': '34', 'HAB': '35', 'ZEP': '36', 'HAG': '37', 'ZEC': '38', 'MAL': '39', 'MAT': '40', 'MRK': '41', 'LUK': '42', 'JHN': '43', 'ACT': '44', 'ROM': '45', '1CO': '46', '2CO': '47', 'GAL': '48', 'EPH': '49', 'PHP': '50', 'COL': '51', '1TH': '52', '2TH': '53', '1TI': '54', '2TI': '55', 'TIT': '56', 'PHM': '57', 'HEB': '58', 'JAS': '59', '1PE': '60', '2PE': '61', '1JN': '62', '2JN': '63', '3JN': '64', 'JUD': '65', 'REV': '66'}; 
+
+var match = location.search.match(/\bref=([1-3A-Z]{3})\.(\d+)/i);  // extract book code and chapter number (e.g. from ref=JHN.3)
+if (match) {
+	var b = match[1].toUpperCase();  // book code
+	var c = match[2];                // chapter
+	if (booksPresent.includes(b)) {
+		redirPage = folder + bookPrefix[b] + '-' + b + '-' + ('00' + c).slice(-3) + ".html"
+	}
+}
+location.href=redirPage
+</script>
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 
