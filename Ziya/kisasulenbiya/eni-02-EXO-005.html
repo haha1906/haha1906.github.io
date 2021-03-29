@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#083F0E">
+<title>Moses Comp 5</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"ft\">This means \"false gods, idols.\" As it is said in Qurʾān al-Karīm, <span class=\"dc\">\"And (as for) those who keep off from the worship of idols and turn to Allāh, they shall have good news...\"</span> (<span class=\"xdc\">Al-Zumar 39:17</span>)</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"ft\">At those times people of Miṣr were idol-worshipers; they were worshiping many gods. So, then nabī Mūsā was <span class=\"wa\">majbūr</span> to explain Allāh as \"our Allāh\".</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"ft\">As written in Qurʾān al-Karīm, Mūsā (a.s.) gave advise to his qawm: <span class=\"dc\">\"'Turn to Allāh for help and be steadfast: the earth belongs to God – He gives it as their own to whichever of His servants He chooses – and the happy future belongs to those who are mindful of Him,’ and they replied, ‘We were being persecuted long before you came to us, and since then too.’ He said, ‘Your Lord may well destroy your enemy and make you successors to the land to see how you behave.’\"</span> (<span class=\"xdc\">Al-Aʿrāf 128-129</span>).</span></div>"
+};
+
+initFootnotes(footnotes);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 14 }, { start: 16, end: 26 }, { start: 32, end: 34 }, { start: 40, end: 40 }];
+var hasIntro = false;
+var baseRef  = "eni-02-EXO-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='eni-01-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='eni-02-EXO-004.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Moses Comp&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;5&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='eni-02-EXO-006.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='eni-32-JON-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+
+<div class="s"><div id="s1">In the presence of Firʿawn <span class="dc">"We sent Mūsā to Firʿawn and his leading supporters with Our signs, but they rejected them. See the fate of those who used to spread corruption."</span> (<span class="xdc">Al-Aʿrāf 7:103</span>)</div></div><a id="v1"></a>
+<div class="p">Then Mūsā and Hārūn (a.s.), together with the elders of Banī Isrāʾīl, went to Firʿawn and said: "Your Majesty, Allāh (s.w.t.) commanded you saying, 'Let My people go to the desert and worship Me.'"<span id="bookmarks1"></span> <a id="v2"></a>Firʿawn replied, "Who is your Allāh (s.w.t.), that by his word I should let Banī Isrāʾīl go? I do not know Allāh".</div>
+<div class="b">&nbsp;</div>
+<div class="p"><span class="it">(At that time the people of Miṣr were idolaters and worshipped the <span class="wa">ṭāghūt</span> <span class="footnote selectable" id="F-0"><sup>a</sup></span>. That is why nabī Mūsā later on had to explain who Allāh was by calling Him "Our Allāh".) </span></div>
+<div class="b">&nbsp;</div><span id="bookmarks2"></span><span id="bookmarks2"></span><a id="v3"></a>
+<div class="p">"Your Majesty, our Ilāh <span class="footnote selectable" id="F-1"><sup>b</sup></span> has revealed His desire to us. Give us permission, and let us go a journey of three days so we can offer Him sacrifices, otherwise He may send a sword or a plague on us."<span id="bookmarks3"></span> <a id="v4"></a>Firʿawn replied, "Mūsā and Hārūn, why are you distracting so many people from their work? Now everybody, go away, go to work!"<span id="bookmarks4-5"></span> <a id="v6"></a>Then he ordered his overseers and headworkers by saying,<span id="bookmarks6"></span> <a id="v7"></a>"From now on do not give straw to the ʿIbrāniyyūn for making bricks. They must find the necessary straw themselves.<span id="bookmarks7"></span> <a id="v8"></a>But the number of bricks must not be less than before. It seems that their work is not very hard! Otherwise they would not beg me to let them go and offer sacrifices.<span id="bookmarks8"></span> <a id="v9"></a>Make their work so hard they won't have time to listen to such nonsense."<span id="bookmarks9"></span></div>
+
+<div class="s"><div id="s2">The oppression gets stronger</div></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p">Then the overseers and the headworkers announced to the Banī Isrāʾīl: "According to the order of Firʿawn, from now on you won't be given straw to make bricks.<span id="bookmarks10"></span> <a id="v11"></a>Find it wherever you can. But the daily number of bricks must not be less than before".<span id="bookmarks11"></span> <a id="v12"></a>So Banī Isrāʾīl spread out all over Miṣr searching for straw.<span id="bookmarks12"></span> <a id="v13"></a>And the Miṣriy overseers were oppressing them saying, "Do not lessen the number of bricks!"<span id="bookmarks13"></span> <a id="v14"></a>They were beating the ʿIbrāniy headworkers, saying: "Why aren't you doing your duty like before?!"<span id="bookmarks14"></span> <a id="v15"></a>Finally, the ʿIbrāniy headworkers came to Firʿawn and complained, "Why are they tormenting us so much?<span id="bookmarks15"></span> <a id="v16"></a>They won't give us straw but they are demanding the same number of bricks as before. They are beating us for no reason. It is not our fault."<span id="bookmarks16"></span> <a id="v17"></a>"You are just lazy!" said Firʿawn. "Otherwise you would not say 'Let us go and offer sacrifices to our Allāh'.<span id="bookmarks17"></span> <a id="v18"></a>Go, and do your work! You won't be given even one bundle of straw!"<span id="bookmarks18"></span> <a id="v19"></a>Hearing this the headworkers felt that they got in a very bad situation.<span id="bookmarks19"></span> <a id="v20"></a>As they were coming out the royal palace, they saw Hārūn and Mūsā (a.s.) who were waiting outside the palace, and said to them:<span id="bookmarks20"></span> <a id="v21"></a>"May Allāh (s.w.t.) punish you! You put Firʿawn and people of the palace against us! You have put a sword in their hands — an excuse to kill us".<span class="footnote selectable" id="F-2"><sup>c</sup></span><span id="bookmarks21"></span></div>
+
+<div class="s"><div id="s3">The promise of Allāh (s.w.t.)</div></div><span id="bookmarks21"></span><a id="v22"></a>
+<div class="p">Then Hazrat Mūsā went and prayed to Allāh (s.w.t.) saying: "My Rabb! Why did you let evil come to this people? Did you bring me here for this purpose?<span id="bookmarks22"></span> <a id="v23"></a>Ever since I delivered Your word to Firʿawn, he has been treating this nation cruelly. But You have not rescued Your people!"<span id="bookmarks23"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

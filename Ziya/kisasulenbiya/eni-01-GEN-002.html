@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#083F0E">
+<title>Genesis Comp 2</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"ft\">āya from Qurʾān: <span class=\"dc\">\"Your Lord said to the angels, ‘I will create a man from clay. When I have shaped him and breathed from My Spirit into him, bow down before him.’ The angels all bowed down together.\"</span> (<span class=\"xdc\">Ṣād 38:71-73</span>) </span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"ft\">According to ḥadīth, Ādam (a.s.) was created on Friday (Muslim, Abū Dāwūd, al-Tirmidhī, Ibn Mājah).</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"ft\">In sūra <span class=\"it\">Tāʾ Hāʾ</span> it is written that Allāh (s.w.t.) warned Ādam (a.s.) about Shayṭān: <span class=\"dc\">\"Ādam, this is your enemy, yours and your wife’s: do not let him drive you out of the garden and make you miserable.\"</span> (<span class=\"xdc\">20:117</span>).</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"ft\"></span><span class=\"ft\">Abū Jaʿfar b. Jarīr al-Ṭabarī, \"<span class=\"it\">Tarīkh al-umam wa-l-mulūk</span>\".</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"ft\">There is a verse in Qurʾān, which says <span class=\"dc\">\"(Allāh) taught Ādam all the names\"</span> (<span class=\"xdc\">Al-Baqara 2:31</span>).</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"ft\">Someone might ask: \"Why would animals not be a suitable companion for Ādam (a.s.)?\" Animals have a certain amount of understanding, but the ability to imagine is given only to man.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"ft\">According to Sharīʿa, it is stressed that we need to choose our spouses fittingly.</span></div>",
+    "F-7": "<div class=\"footnote-p\"><span class=\"ft\">The book of Thaʿlabī \"<span class=\"it\">ʿArāʾis</span>\" says that Allāh put Ādam (a.s.) to sleep and created Mother Ḥawwāʾ from his rib.</span></div>",
+    "F-8": "<div class=\"footnote-p\"><span class=\"ft\">There is an aya in the Qurʾān: <span class=\"dc\">\"He created all that is on the earth for you.\"</span> (<span class=\"xdc\">Al-Baqara 2:29</span>)</span></div>",
+    "F-9": "<div class=\"footnote-p\"><span class=\"ft\">The prophet (s.a.s.) also said: \"Allāh created Ādam in His picture\" </span><span class=\"ft\">(narrated by al-Bukhārī (6227) and Muslim (6212) from Abu Hurayrah r.a.)</span></div>",
+    "F-10": "<div class=\"footnote-p\"><span class=\"ft\">In sūra <span class=\"it\">Baqara 2:117</span> there is a phrase \"<span class=\"it\">kun-fa-yakun</span>\". If we translate it, it means \"<span class=\"it\">If he says 'Be', it will be.</span>\" </span><span class=\"ft\">So Allāh created the creation of the world by the word \"Be\".</span></div>",
+    "F-11": "<div class=\"footnote-p\"><span class=\"ft\">For example, in the surah Al-Dhāriyāt, it says: <span class=\"dc\">\"I created jinn and mankind only to do <span class=\"wa\">ibāda</span> to Me\"</span> (<span class=\"xdc\">51:56</span>). The meaning of ibāda is to worship and serve. This is also a proof that human beings are the greatest among created creatures. Allāh (s.w.t.) created Ādam and Ḥawwāʾ to be in <span class=\"wa\">munaja</span> with Him.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 4 }, { start: 6, end: 13 }, { start: 15, end: 19 }, { start: 21, end: 22 }, { start: 24, end: 35 }, { start: 37, end: 37 }, { start: 39, end: 50 }];
+var hasIntro = false;
+var baseRef  = "eni-01-GEN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='eni-01-GEN-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Genesis Comp&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='eni-01-GEN-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='eni-02-EXO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="mt"><div id="mt1">The Story of Ādam (a.s.)\mt*</div></div>
+<div class="b">&nbsp;</div><a id="v7"></a>
+<div class="p">As it is written in the Qurʾān al-Karīm, <span class="dc">"Allāh Almighty (s.w.t.) created Ādam (a.s.) from clay."</span> (<span class="xdc">Ṣād 38:71</span>).<span id="bookmarks7"></span></div>
+
+<div class="s"><div id="s1">The Creation of Ādam (a.s.)</div></div>
+<div class="p">Allāh made a man from the soil and breathed life-giving breath from <span class="it">His spirit<span class="footnote selectable" id="F-0"><sup>a</sup></span> </span> into the man's nostrils, and the man started breathing.<span class="footnote selectable" id="F-1"><sup>b</sup></span> <span class="it">At that time there was no-one else on the earth besides Ādam (a.s.).</span> <a id="v8"></a>Allāh made a garden in a place called ʿAdn<span id="bookmarks8"></span> <a id="v9"></a>and filled it with beautiful and delicious fruit trees. There were two special trees in the middle of the garden: one was the tree of life, and the second one was the tree of knowing good and evil.<span id="bookmarks9"></span> <a id="v15"></a>So Allāh (s.w.t.) placed Ādam (a.s.) in this garden and commanded him to take care of the garden.<span id="bookmarks15"></span> <a id="v16"></a>Then Allāh (s.w.t) warned him saying: "Go ahead. It is <span class="wa">ḥalāl</span> for you to eat fruit from any of these trees, except for one.<span id="bookmarks16"></span> <a id="v17"></a>Do not eat from the tree of the knowledge of good and evil, because you will die on the same day that you eat from it."<span class="footnote selectable" id="F-2"><sup>c</sup></span><span id="bookmarks17"></span></div>
+
+<div class="s"><div id="s2">The First Prophet</div></div>
+<div class="p"><span class="it">One of the great ṣaḥāba, Abū Dhar (r.a.), asked the prophet (s.a.w.): "Among the prophets, who was the first?" Rasul Allāh (s.a.w.) said: "Ādam (a.s.) is the first sent prophet. Allāh made him by His hand and put spirit in him and created him as a handsome human being." Another narration from Abū Dhar (r.a.) says: "I asked the messenger (s.a.w.): "Oh messenger of Allāh, was Ādam one of the prophets?" The messenger (s.a.w.) answered saying: "Of course, Ādam was the first prophet who spoke with Allāh directly."</span><span class="footnote selectable" id="F-3"><sup>d</sup></span></div>
+
+<div class="s"><div id="s3">Naming the Animals</div></div>
+<div class="p"><span class="it">As Ādam (a.s.) walked through <span class="wa">jannat ʿadn</span>, \it he observed the beautiful perfection that surrounded him.</span> <a id="v19"></a>Allāh (s.w.t.) brought all the creatures He had created to Ādam (a.s.)'s presence<span id="bookmarks19"></span> <a id="v20"></a>so that he (a.s.) could name them.<span class="footnote selectable" id="F-4"><sup>e</sup></span> When he finished naming them, he realized that he lacked only one thing. There was no suitable companion for him.<span class="footnote selectable" id="F-5"><sup>f</sup></span><span id="bookmarks20"></span></div>
+
+<div class="s"><div id="s4">The Creation of Umm Ḥawwāʾ</div></div>
+<div class="p"><span class="zv">18 </span> Before Allāh the Highest presented the living creatures to Nabī Ādam, he revealed: "It is not good for Ādam to be alone. I will create a suitable companion for him."<span class="footnote selectable" id="F-6"><sup>g</sup></span> So after Ādam (a.s.) had named the animals, <a id="v21"></a>Allāh created Umm Ḥawwāʾ from his side.<span class="footnote selectable" id="F-7"><sup>h</sup></span><span id="bookmarks21"></span> <a id="v23"></a>When Ādam (a.s.) first saw Umm Ḥawwāʾ, he rejoiced and said, "These bones are from my bones; this flesh is from my flesh; I name her 'woman', for she was created from man's rib."</div>
+<div class="p"></div>
+<div class="p">\it So Umm Ḥawwāʾ's bone and flesh were originally taken from Ādam.<span id="bookmarks23"></span> <a id="v24"></a>\it As it is said in the Qurʾān al-Karīm: <span class="dc">"People, be mindful of your Lord, who created you from a single soul, and from it created its mate..."</span> (<span class="xdc">Al-Nisāʾ 4:1</span>). That is why when a man gets married he leaves his parents, becomes joined to his wife, and the two of them become one body.<span id="bookmarks24"></span></div>
+
+<div class="s"><div id="s5">The Creation of the World</div></div>
+<div class="p"><span class="it">Allāh Almighty (s.w.t.) created the whole world in six days. In the surah Qāf there is a verse which says: <span class="dc">"We created the heavens, the earth, and everything between, in six days,"</span> (<span class="xdc">Qāf 50:38 </span>). In the first two days Allāh separated the light from the darkness and the earth from heavens. During the other four days he gave beauty to the earth: he created mountains, the plant world and animal world for Banī* Ādam</span><span class="footnote selectable" id="F-8"><sup>i</sup></span>. <span class="it">And at the end, he created the most beautiful creation among the created — our first granddad and grandmom. It is written in Qurʾān: <span class="dc">"We create man in the finest state."</span> \it (<span class="xdc">Al-Tīn 95:4</span>). In another āya Qurʾān says: <span class="dc">"We have honoured the children of Ādam... and favoured them specially above many of those We have created."</span> \it (<span class="xdc">Al-Isrāʾ 17:70</span>).</span> <span class="footnote selectable" id="F-9"><sup>j</sup></span></div>
+
+<div class="s"><div id="s6">The World Without Sorrow</div></div>
+<div class="p"><span class="zv">Gen1:31 </span> Everything Allāh had created was good. <span class="dc">"He gave everything its perfect form."</span> <span class="it">(<span class="xdc">Al-Sajda 32:7</span>).</span> <span class="zv">Gen1:11 </span> When He commanded "Let there be!", all kinds of plants and trees which give fruit came out of the earth. <span class="zv">Gen1:20 </span> When He commanded "Let there be!", fish and different kinds of sea animals appeared in the water. <span class="zv">Gen1:24 </span> When He commanded "Let there be<span class="footnote selectable" id="F-10"><sup>k</sup></span>!" all kinds of animals and different coloured birds came into existence. \it Allāh's blessing was seen in every thing.</div>
+<div class="p"></div>
+<div class="p"><span class="zv">Gen1:25 </span> \it There were no diseases, no death, no sadness. <a id="v25"></a>The garden was full of trees that gave all kinds of fruits, and Ādam (a.s.) and Ḥawwāʾ were living happily in the presence of Allāh. They did not know yet what evil was.<span id="bookmarks25"></span></div>
+
+<div class="s"><div id="s7">Why Did Allāh Create Humans?</div></div>
+<div class="p"><span class="it">It is not easy to answer this question. What do you think: Why has Allāh (s.w.t.) created us?</span><span class="footnote selectable" id="F-11"><sup>l</sup></span></div>
+
+<div class="s"><div id="s8">Hazrat Ādam is the Khalīfa of Allāh on the Earth</div></div>
+<div class="p"><span class="zv">Gen1:28 </span> When Allāh (s.w.t.) created our first father and mother, He blessed them and commanded them saying this: "Be fruitful. Multiply and fill the earth. I have given this earth to you. Govern the fish, birds, and all animals living on the earth. <span class="zv">Gen1:29 </span> Here, I have given you for food all kinds of grain and trees which have seeds in their fruits."</div>
+<div class="p">\it So, it turns out that Hazrat Ādam was given the title of Khalīfa — the right to rule over the entire Earth. As it is written in the Qur'an, Allāh informed angels about this before He created Ādam (a.s.): <span class="dc">"I am putting a <span class="wa">Khalīfa</span> on the earth."</span> \it (<span class="xdc">Al-Baqara 2:30</span>).<span id="bookmarks25"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>
