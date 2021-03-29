@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#083F0E">
+<title>Jonah Compile 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"wa\">Banī Yāqūb</span> refers to the twelve tribes that descended from Nabī Yāqūb. In the Quran Karīm they are called the Banī Isrāʾīl. In the days of Yūnus (a.s.) they worshipped Allāh, who regularly sent them prophets to give them His good guidance (<span class=\"wa\">hudà </span>). <span class=\"xdc\">*Al-Ṣaff 61:14*</span> </div>",
+    "F-1": "<div class=\"footnote-p\">Al-An‘ām 6:83-87\xdc* </div>",
+    "F-2": "<div class=\"footnote-p\">*Al-Anbiyāʾ* 21:87\xdc* and <span class=\"xdc\">*Al-Fatḥ* 48:48 </span>. </div>",
+    "F-3": "<div class=\"footnote-p\">*Al-Anbiyāʾ* 21:87 \xdc*. </div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"ft\">Allāh is al-Raḥmān, the most merciful of any who are merciful. He is infinitely good and pours out his benefits upon those who are in need, whether they deserve it or not. As al-Ghazālī has said, 'His mercy takes precedence over His anger'. (<span class=\"it\">The Ninety-Nine Beautiful Names of Allāh</span>) </span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"ft\"><span class=\"xdc\">*Al-Zumar* 39:17 </span>.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"ft\">The prophets *ʿalay-him assalam* warned people about tragedies that come from disobeying Allāh. </span></div>",
+    "F-7": "<div class=\"footnote-p\"><span class=\"ft\">The people of Yūnus did not realise that they were suffering because of their violence. </span></div>",
+    "F-8": "<div class=\"footnote-p\"><span class=\"ft\">There is <span class=\"wa\">ikhtilāf</span> about WHEN Yunus (a.s.) got on the ship. Some <span class=\"wa\">ulamā</span> think that Yunus (a.s.) first went to preach to Nināwiyyun, and because they would not obey, he became angry and ran away on the ship. But some other <span class=\"wa\">ulamā</span> say, he ran away before he went to preach, and they say that because of the famous aya from the Quran Karīm, \"<span class=\"it\">innī kuntu min aẓ-ẓālimīn</span>\", called <span class=\"wa\">dua a'zam</span>. </span></div>",
+    "F-9": "<div class=\"footnote-p\"><span class=\"ft\">This is the city of the <span class=\"wa\">miʿraj</span> where Bānī Isrāʾīl worshipped Allāh. </span></div>",
+    "F-10": "<div class=\"footnote-p\"><span class=\"ft\">A translation explains, </span><span class=\"fdc\">'Waves came at those on board from every side and they felt that there was no escape.' </span><span class=\"ft\"> <span class=\"xdc\">Yūnus 10:22 </span> </span></div>",
+    "F-11": "<div class=\"footnote-p\"><span class=\"ft\">The captain didn’t realize that Yūnus was a prophet of Allāh. </span></div>",
+    "F-12": "<div class=\"footnote-p\"><span class=\"ft\">Now they realized that he was a Prophet of Allāh, and that he was trying to run away from Allāh's commandment. </span></div>",
+    "F-13": "<div class=\"footnote-p\"><span class=\"ft\">They were asking Allāh to stop the storm so they wouldn't die. </span></div>",
+    "F-14": "<div class=\"footnote-p\"><span class=\"ft\">During the time of the previous books worshippers of Allāh (s.w.t.) would kill an animal to show their devotion to Him. See </span><span class=\"fdc\">Al-Ḥajj 22:32-34 </span><span class=\"ft\">. </span></div>"
+};
+
+initFootnotes(footnotes);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 4 }];
+var hasIntro = false;
+var baseRef  = "eni-32-JON-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='eni-02-EXO-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='eni-02-EXO-040.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Jonah Compile&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='eni-32-JON-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="mt"><span class="mt">Yūnus AS </span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="p"><span class="dc">"Yūnus too was one of the messengers" </span> <span class="xdc">Al-Ṣāffāt 37:139 </span></div>
+<div class="ib">&nbsp;</div>
+<div class="ip">This is the story of how Allāh (s.w.t.) sent Nabī Yūnus to make <span class="wa">daʿwa</span> to the Nināwiyyun. Nabī Yūnus belonged to the Banī Yāqūb<span class="footnote selectable" id="F-0"><sup>\ft</sup></span> and was a part of the line of prophets that came after *sayyidunā* Ibrāhīm (a.s.). Like all the prophets, Allāh (swt) guided him to the straight path (<span class="wa">ṣirāt al-mustaqīm</span>).<span class="footnote selectable" id="F-1"><sup>\xdc</sup></span> He is also called <span class="wa">Dhū al-nūn</span> and <span class="wa">Ṣāhib al-ḥūt</span>, which both mean the 'companion of the fish'.<span class="footnote selectable" id="F-2"><sup>\xdc</sup></span> Allāh (s.w.t.) says, 'And remember the man with the whale …'.<span class="footnote selectable" id="F-3"><sup>\xdc</sup></span></div>
+<div class="ip">The Nināwiyyun were a violent and cruel people, and were enemies of the Banī Yāqūb. They practiced <span class="wa">shirk</span> and worshipped false gods. Yūnus thought that Allāh (s.w.t.) should destroy their city, but Allāh is al-Raḥmān, the Merciful.⁠<span class="footnote selectable" id="F-4"><sup>a</sup></span> They did not realise that the evil they were doing would bring disaster on them. Neither did they know about Allāh (s.w.t.)'s promise: <span class="dc">"There is good news (<span class="wa">al-bushrā</span>) for those who reject the worship of false gods and turn to Allāh (in repentance)." </span> ⁠<span class="footnote selectable" id="F-5"><sup>b</sup></span> So He sent Nabī Yūnus (a.s.) to them and oﬀered them the chance to repent from their evil practices.</div>
+
+<div class="s"><div id="s1">'He fled to the overloaded ship'</div></div>
+<div class="s2"><div id="s2">Al-Ṣāffāt 37:140</div></div><a id="v1"></a>
+<div class="p">One day Yūnus ibn Amittay received Allah (s.w.t.)'s command: 'Go at once to the important city of Nināwā. I am concerned about the disaster<span class="footnote selectable" id="F-6"><sup>c</sup></span> that their sin is bringing upon  them.<span class="footnote selectable" id="F-7"><sup>d</sup></span> So go there and warn them.' Instead, Yūnus (a.s.) intended to flee<span class="footnote selectable" id="F-8"><sup>e</sup></span> in the opposite direction toward the open sea to get away from al-Quds.<span class="footnote selectable" id="F-9"><sup>f</sup></span> Yūnus thought that he could escape Allāh’s command by going where people didn’t worship or obey Allāh. He went to the port city of Yāfā and found a ship there that was going out to sea. He paid the fare and went down into the ship so that he could go with them out to sea—to a place where people didn’t worship Allāh.<span id="bookmarks1-3"></span></div><span id="bookmarks1-3"></span><a id="v4"></a>
+<div class="p">Once the ship was out to sea, Allāh sent a strong wind that caused a terrible storm to hurl waves against every side of the ship. The sailors felt that there was no escape and became very afraid because it looked like the ship was going to break apart.<span class="footnote selectable" id="F-10"><sup>g</sup></span> Each man cried out to his god for help. Then they began throwing the cargo overboard to lighten the ship so that it wouldn’t sink. But Yūnus had gone down into the hold of the ship to lie down and had fallen sound asleep there.<span id="bookmarks4-5"></span></div><span id="bookmarks4-5"></span><a id="v6"></a>
+<div class="p">When the captain of the boat found Nabī Yūnus sleeping in the bottom of the boat, he was very surprised. He said to him, 'How can you be in such a deep sleep? Get up! Call out to your god!<span class="footnote selectable" id="F-11"><sup>h</sup></span> Maybe your god will hear your prayers and have mercy on us so that we won't perish!'<span id="bookmarks6"></span></div>
+
+<div class="s"><div id="s3">They cast lots and he suffered defeat</div></div>
+<div class="s2"><div id="s4">Al-Ṣāffāt 37:141</div></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p">The storm was getting worse so the sailors said to one another, 'Let’s cast lots to find out whose wrongdoing has caused the gods to bring this disaster (calamity) on us'. So they cast lots and the lot fell on Yūnus. In desperation they began asking him questions to find out what was going on:</div>
+<div class="p"></div>
+<div class="qc top-spacing">'Is this disaster (calamity) your fault or ours?!?</div>
+<div class="b">&nbsp;</div>
+<div class="q">... What kind of work do you do?</div>
+<div class="q2">… Where did you come from?</div>
+<div class="q3">… What country are you from?</div>
+<div class="q4">… Who are your people?'<span id="bookmarks7-8"></span></div><span id="bookmarks7-8"></span><a id="v9"></a>
+<div class="p">He finally had to tell them: 'I am a Prophet from the Banī Isrāʾīl. I fear and worship Allāh who made the sea and the dry land'. When they heard this, they trembled with fear and cried out, 'What have you done?'<span class="footnote selectable" id="F-12"><sup>i</sup></span><span id="bookmarks9-10"></span></div><span id="bookmarks9-10"></span><a id="v11"></a>
+<div class="p">When the storm raged even more, they asked Yūnus, 'What should we do with you so that the sea will become still?' Yūnus answered them and said, 'I know that this great storm has come against you because of me. The lot did not fall on me by chance. So pick me up and throw me into the sea! Then it will stop raging against you.'<span id="bookmarks11-12"></span></div><span id="bookmarks11-12"></span><a id="v13"></a>
+<div class="p">But they were afraid to harm Nabī Yūnus, so they tried instead to row back to the shore. No matter how hard they tried, they got nowhere because the storm was raging against them. After trying everything they could, they cried out to Allāh : 'Ya Allāh! You have acted according to Your will! Please don't let us die because of this man’s life!<span class="footnote selectable" id="F-13"><sup>j</sup></span> Don’t hold us responsible for this man's blood!' Then they picked up the Prophet and hurled him into the sea.</div>
+<div class="p">*Imagine!* The sea suddenly stopped raging against them!<span id="bookmarks13-15"></span> <a id="v16"></a>After this the sailors deeply feared Allāh and offered a sacrifice<span class="footnote selectable" id="F-14"><sup>k</sup></span> to Him when they got back on land. They repented and made vows to Allāh.<span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
+<div class="p">Meanwhile Allāh had provided a big fish to swallow Yūnus. And he was in the belly of this fish for three days and three nights.<span id="bookmarks17"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>
