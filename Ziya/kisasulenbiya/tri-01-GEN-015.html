@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#083F0E">
+<title>Tekvin Derlemesi 15</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"ft\"><span class=\"wh\">وَإِذْ أَخَذْنَا مِنَ النَّبِيِّينَ مِيثَاقَهُمْ وَمِنْكَ وَمِنْ نُوحٍ وَإِبْرَاهِيمَ وَمُوسَىٰ وَعِيسَى ابْنِ مَرْيَمَ ۖ وَأَخَذْنَا مِنْهُمْ مِيثَاقًا غَلِيظًا </span> <span class=\"bdit\">«Hani Biz peygamberlerden ahidlerini almıştık; senden, Nûh'tan, İbrahim'den, Musa'dan ve Meryem oğlu İsa'dan. Biz onlardan sapasağlam ahid almıştık.»</span> (Ahzâb sûresi, 33/7).</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"ft\">Ya'kûbî, “Tarih”, I, 25.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"ft\">Kuran-ı Kerim der ki: <span class=\"wh\">وَاذْكُرْ فِي الْكِتَابِ إِبْرَاهِيمَ ۚ إِنَّهُ كَانَ صِدِّيقًا نَبِيًّا </span> <span class=\"bdit\">«Kitap'ta İbrahim'i de an. Şüphesiz o, sıddık bir nebiydi»</span> (Meryem sûresi, 41. ayet). ‘sıddık’ kelimesinin manası; ahdine sadık, Allah'a karşı vefakardır. ‘sadık’ kişi— vefakar kişidir. Lakin eğer dal harfine şedde konulursa, <span class=\"wh\">صِدِّيق </span>‘çok sadık’, ‘sonuna kadar sadık’ anlamı kazanır. </span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"ft\"><span class=\"wh\">وَإِذِ ابْتَلَىٰ إِبْرَاهِيمَ رَبُّهُ بِكَلِمَاتٍ فَأَتَمَّهُنَّ </span> <span class=\"bdit\">«Hani Rabbi, İbrahim'i birtakım kelimelerle denemişti. O da eksiksiz olarak yerine getirmişti.»</span> (Bakara sûresi, 2/124). </span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"ft\">Bu sözler, ahdin çok uzun bir devri kapsadığını gösteriyor. Musa peygamberimiz tebliğ vazifesine Hz. İbrahim'den (a.s.) 400 yıl sonra başladı. Dolayısıyla İbrahim aleyhisselamla yapılmış bu anlaşma, uzun yıllar boyu devam eden ve peygamberleri birbirine bağlayan bir ahiddi. </span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"ft\">Amorlular, Lût gölünün kuzeybatısındaki günahkar kavimlerden biriydi.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"ft\">Süyûtî'nin “Dürrü'l-mensûr” kitabından: “Ebu Zerr dedi ki: ‘Ya Resûlallah, İbrahim ve Musa'nın sahifelerinde, Allah'ın sana nazil ettiği kitaptaki sözlere benzer sözler var mıydı?’ Resûlallah dedi ki: ‘Ey Ebu Zerr, bana şu ayetleri oku: <span class=\"wh\">قَدْ أَفْلَحَ مَنْ تَزَكَّىٰ ۝ وَذَكَرَ اسْمَ رَبِّهِ فَصَلَّىٰ ۝ بَلْ تُؤْثِرُونَ الْحَيَاةَ الدُّنْيَا ۝ وَالْآخِرَةُ خَيْرٌ وَأَبْقَىٰ ۝ إِنَّ هَٰذَا لَفِي الصُّحُفِ الْأُولَىٰ ۝ صُحُفِ إِبْرَاهِيمَ وَمُوسَىٰ </span> <span class=\"bdit\">«Kendisini kötülüklerden arındıran, Rabbinin adını anıp salat eden, felaha erer. Fakat bilakis siz dünya hayatını ve zevklerini tercih ediyorsunuz. Halbûki âhiret mutluluğu daha üstün, daha hayırlı, hem de ebedîdir. Bu, elbette önceki sahifelerde, İbrahim ile Musa'ya verilen sahifelerde de bildirilmiştir»</span>’ (A'lâ sûresi, 14-19. ayetler)”.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 4 }, { start: 6, end: 13 }, { start: 15, end: 19 }, { start: 21, end: 22 }];
+var hasIntro = false;
+var baseRef  = "tri-01-GEN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='tri-01-GEN-014.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Tekvin Derlemesi&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;15&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='tri-01-GEN-016.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='tri-32-JON-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+
+<div class="s"><div id="s1">AHDİN TASDİKLENİŞİ</div></div><a id="v1"></a>
+<div class="p">Sonra Allah-u Teâlâ İbrahim aleyhisselama yakaza halindeyken vahyedip: “Korkma İbrahim. Ben, seninle bir ahid<span class="footnote selectable" id="F-0"><sup>a</sup></span> yapıyorum” dedi, “Sen benim himayem altındasın. Alacağın mükafat çok büyük olacaktır”.<span id="bookmarks1"></span> <a id="v2"></a>Allah'ın Resûlü ise: “Ya Rabbel âlemîn! Biliyorsun, hala çocuksuzum. Vereceğin mükafatı ne yaparım?” diye sordu, “Ölsem malım-mülküm evimin kahyâsı Şamlı Elazar'ın mı olsun?<span id="bookmarks2"></span> <a id="v3"></a>Çocuk vermedin ki. Mirasım hizmetkarıma kalacak.”<span id="bookmarks3"></span> <a id="v4"></a>“Hayır” dedi Allah (c.c.), “Miras hizmetkarına değil, kendi belinden çıkacak olan oğluna kalacak.” dedi.<span id="bookmarks4"></span> <a id="v5"></a>Sonra Hazreti İbrahim'i dışarı çıkarıp: “Gökteki yıldızlara bak. Sayıp bitirebilir misin? Senin neslin de yıldızlar kadar çok<span class="footnote selectable" id="F-1"><sup>b</sup></span> olacak” dedi.<span id="bookmarks5"></span> <a id="v6"></a>(İbrahim peygamber Allah'a dayanan güvenen bir insandı. Bu sebeple Allah ona sıddîkıyyet makamı<span class="footnote selectable" id="F-2"><sup>c</sup></span> vermiştir.)<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p">Allah Hazreti İbrahim'e: “Şu gördüğün yeri vermek için, seni Kildaniler'in şehrinden alıp buraya getiren Ben'dim” dedi.<span id="bookmarks7"></span> <a id="v8"></a>Sonra İbrahim aleyhisselam: “Ya Rab, bu yeri bana vereceğinden nasıl emin olabilirim?” dedi.<span id="bookmarks8"></span> <a id="v9"></a>Allah-u Teâlâ: “Bana 3 yaşında bir düve, 3 yaşında bir keçi, 3 yaşında bir koç, kumru ve güvercin yavrusu getir.” dedi.<span class="footnote selectable" id="F-3"><sup>d</sup></span><span id="bookmarks9"></span> <a id="v10"></a>Allah Resûlü gidip söylenenleri getirdi. Kuşlar hariç hepsini ortalarından kesip ikişer parçaya ayırdı ve birbirlerinin karşısına koydu.<span id="bookmarks10"></span> <a id="v12"></a>Gün batımında İbrahim aleyhisselama derin bir uyku geliverdi. Düşünde her yanını korkunç bir karanlık kaplamıştı.<span id="bookmarks12"></span> <a id="v15"></a>Sonra Allah'ın sesi geldi: “Sen uzun bir ömür yaşayıp, huzur içinde hayata gözerini yumacaksın” dedi,<span id="bookmarks15"></span> <a id="v13"></a>“Evlatların ise 400 yıl<span class="footnote selectable" id="F-4"><sup>e</sup></span> başka bir ülkede yabancı olarak yaşayacaklar. Köleliğe zorlanıp zulme uğrayacaklar.<span id="bookmarks13"></span> <a id="v14"></a>Ben de ülkenin sahiplerini cezalandırıp, evlatlarını özgürlüğe kavuşturacak, mallarıyla birlikte o yabancı ülkeden çıkartacağım.<span id="bookmarks14"></span> <a id="v16"></a>Dört nesil sonra, Amorluların günahı<span class="footnote selectable" id="F-5"><sup>f</sup></span> had safhaya ulaştığında, bu topraklara geri dönecekler.”<span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
+<div class="p">Akşam vakti zifiri karanlık çökünce, tandıra benzeyen dumanı tüten bir şey ile yanıp duran meşaleye benzer başka bir şey göründü. Bunlar, kesilen hayvanların arasından geçti.<span id="bookmarks17"></span> <a id="v18"></a>Böylece Allah-u Teâlâ, Hz. İbrahim'le (a.s.) ahdini gösterdi ve: “Bu yeri senin evlatlarına vereceğim” diye vaat verdi.<span id="bookmarks18"></span></div>
+
+<div class="s"><div id="s2">AHDİN ŞERHİ</div></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="p"><span class="it">Ahdin ne olduğu hakkında fikir edinmek önemlidir. O devirde ‘ahid’ sözü, iki tarafın karşılıklı olarak yeni bir münasebet başlattığını, yani artık birbirine yabancı olmadıklarını, belki yakın kişiler, vefakar adamlar olduklarını bildirirdi. Bu sebeple ‘ahid’ sözü eski kitaplarda ‘vefa’ sözüyle birlikte geçer. Ahid kavramı görev ve mesuliyeti de beraberinde getirir. Allah (c.c.) İbrahim'e (a.s.): “Ben seninle ahid yaptım.” derken bunun manası şu şekildedir: “Ben sana sadığım, verdiğim vaadlerimi yerine getireceğim”. Ahde giren kişi Allah'ın vaatlerine, yani ahdin bereketlerine ortak olur. Bunun yanında bir şey daha söyleyecek olursak: Allah ile yapılan ahid, sadece bir nesle değil, belki onun evlatlarına da aittir. Bu sebepten İbrahim aleyhisselam şaşırıp: “Benim çocuklarım yok, mirasım hizmetkarıma mı kalsın?” demiştir. Lakin Cenâb-ı Hakk merhametini göstererek: “Hayır, Ben sana çocuklar vereceğim. İşte şu yerleri senin evlatlarına miras olarak veriyorum” dedi. </span><span id="bookmarks19"></span></div>
+
+<div class="s"><div id="s3">AHİD YOLUYLA VERİLEN VAADLER</div></div><span id="bookmarks19"></span><a id="v20"></a>
+<div class="p"><span class="it">Böylece Allah (c.c.), hazreti İbrahim'e 3 şey için söz verdi. Bunlar: </span></div>
+<div class="p"><span class="it">— evlatlarının çok olacağı,</span></div>
+<div class="p"><span class="it">— evlatlarının o yeri miras alacağı</span></div>
+<div class="p"><span class="it">— ve onun zürriyeti vesilesiyle yeryüzündeki bütün halklara bereket ihsan edeceği. <span class="footnote selectable" id="F-6"><sup>g</sup></span> Halbuki İbrahim aleyhisselam o sırada çocuksuz olup, Kenan sınırında çadırlarda yaşayan, kendi evi bile olmayan bir misafirdi.</span></div>
+<div class="b">&nbsp;</div><span id="bookmarks20"></span>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>
