@@ -31,6 +31,8 @@ if (match) {
 	if (booksPresent.includes(b)) {
 		console.log(b);
 		console.log(location.search.substr(0, 6));
+		var d = folder + a + '-' + bookPrefix[b] + '-' + b + '-' + ('00' + c).slice(-3) + ".html"
+		console.log(d);
 		//redirPage = folder + a + '-' + bookPrefix[b] + '-' + b + '-' + ('00' + c).slice(-3) + ".html"
 		console.log(redirPage);
 	}
