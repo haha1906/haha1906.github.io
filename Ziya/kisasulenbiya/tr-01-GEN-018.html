@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#083F0E">
+<title>Tekvin Derlemesi 18</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"ft\">O zamanlar çadırı Memrâh denilen meşelik bir alandaydı.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"ft\"><span class=\"wh\">وَامْرَأَتُهُ قَائِمَةٌ فَضَحِكَتْ فَبَشَّرْنَاهَا بِإِسْحَاقَ ... ۝ قَالَتْ يَا وَيْلَتَىٰ أَأَلِدُ وَأَنَا عَجُوزٌ وَهَٰذَا بَعْلِي شَيْخًا ۖ إِنَّ هَٰذَا لَشَيْءٌ عَجِيبٌ ۝ قَالُوا أَتَعْجَبِينَ مِنْ أَمْرِ اللَّهِ ۖ رَحْمَتُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ الْبَيْتِ ۚ إِنَّهُ حَمِيدٌ مَجِيدٌ </span> <span class=\"bdit\">«Karısı ayaktaydı, bunun üzerine güldü. Biz ona İshâk'ı .... müjdeledik. “Vay bana” dedi (kadın). “Ben kocamış bir kadın iken ve şu kocam da bir ihtiyar iken doğuracak mıyım? Gerçekten bu, şaşırtıcı bir şey!” Dediler ki: “Allah'ın emrine mi şaşıyorsun? Allah'ın rahmeti ve bereketleri sizin üzerinizdedir. Ey ev halkı şüphesiz O, övülmeye layık olandır, Mecid'dir.”» </span> (Hûd sûresi, 11/71-73) </span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"ft\">Kur'an-ı Kerîm bu konu hakkında şu ayetleri bildiriyor: <span class=\"wh\">۝ قَالَ فَمَا خَطْبُكُمْ أَيُّهَا الْمُرْسَلُونَ ۝ قَالُوا إِنَّا أُرْسِلْنَا إِلَىٰ قَوْمٍ مُجْرِمِينَ ۝ إِلَّا آلَ لُوطٍ إِنَّا لَمُنَجُّوهُمْ أَجْمَعِينَ ۝ إِلَّا امْرَأَتَهُ </span> <span class=\"bdit\">«(İbrahim) dedi ki: “Ey Elçiler! göreviniz nedir?” Dediler ki: “Gerçekte biz, suçlu bir kavme gönderildik. Ancak Lût'un ailesi hariçtir; biz onların tümünü muhakkak kurtaracağız, ama karısı hariç”.»</span> (Hicr sûresi, 15/57-60).</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"ft\">Sedum ve Gomore halkı günaha batmış, fesat işlerle meşgul çok kötü insanlardı.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"ft\"><span class=\"wh\">وَلَمَّا جَاءَتْ رُسُلُنَا إِبْرَاهِيمَ بِالْبُشْرَىٰ قَالُوا إِنَّا مُهْلِكُو أَهْلِ هَٰذِهِ الْقَرْيَةِ ۖ إِنَّ أَهْلَهَا كَانُوا ظَالِمِينَ ۝ قَالَ إِنَّ فِيهَا لُوطًا </span><span class=\"bdit\">«Bizim elçilerimiz İbrahim'e bir müjde ile geldikleri zaman, dediler ki: “Gerçek şu ki, biz bu ülkenin halkını yıkıma uğratacağız. Çünkü onun halkı zalim oldu”. (İbrahim) Dedi ki: “Ama Lût da orada”...»</span> (Ankebut sûresi, 29/31-32). </span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"ft\">Zariyat sûresi, 51/36.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 4 }, { start: 6, end: 13 }, { start: 15, end: 19 }, { start: 21, end: 22 }];
+var hasIntro = false;
+var baseRef  = "tr-01-GEN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='tr-01-GEN-017.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Tekvin Derlemesi&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;18&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='tr-01-GEN-019.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='tr-32-JON-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+
+<div class="s"><div id="s1">ÜÇ MİSAFİRİN TEŞRİFİ</div></div><a id="v1"></a>
+<div class="pc">هَلْ أَتَاكَ حَدِيثُ ضَيْفِ إِبْرَاهِيمَ الْمُكْرَمِينَ ۝...قَالُوا لَا تَخَفْ ۖ وَبَشَّرُوهُ بِغُلَامٍ عَلِيمٍ</div>
+<div class="pm">«Sana İbrahim'in ağırlanan misafirlerinin haberi geldi mi? ... “Korkma” dediler ve onu bilgin bir oğul ile müjdelediler» (Zâriyât, 51/24,28).<span id="bookmarks1"></span></div><span id="bookmarks1"></span><a id="v2"></a>
+<div class="p">Bir gün İbrahim aleyhisselam çadırının<span class="footnote selectable" id="F-0"><sup>a</sup></span> eşiğinin önünde oturmaktaydı. Günün sıcak zamanında, gözlerini kaldırıp baktığında karşısında üç adamın olduğunu gördü. <span class="it">Bu adamlar, Allah'ın iradesini peygambere açıklamak için Allah tarafından gönderilen melekler idi. </span> Derhal yerinden kalkıp onları karşılamaya koştu. Yere kadar eğilip başını koydu ve:<span id="bookmarks2"></span> <a id="v3"></a>“Ey efendim, lütfunuza layıksam kalın, kulunuzdan yüz çevirip gitmeyin.<span id="bookmarks3"></span> <a id="v4"></a>Su getirteyim, ayaklarınızı yıkayıp bir ağacın gölgesinde dinlenin.<span id="bookmarks4"></span> <a id="v5"></a>Size yiyecek bir şeyler getireyim. Yolunuza sonra devam edersiniz” dedi. Melekler: “Peki, söylediğin gibi olsun” dediler.<span id="bookmarks5"></span> <a id="v6"></a>İbrahim aleyhisselam koşup çadıra girdi, eşi Sare (r.a.) anamıza: “Çabuk, en iyi undan üç kap dolusu çıkar, yoğurup pide yap” dedi.<span id="bookmarks6"></span> <a id="v7"></a>Sonra hizmetkarının yanına koşup, sürüden semiz bir buzağı gösterdi. Hizmetkarı derhal onu kesti ve pişirmeye başladı.<span id="bookmarks7"></span> <a id="v8"></a>Et piştikten sonra Allah'ın resulü onu süzme yoğurt ve sütle birlikte ağacın altındaki misafirlerinin önüne koydu. Lakin...<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v102"></a>
+<div class="pc">فَلَمَّا رَأَىٰ أَيْدِيَهُمْ لَا تَصِلُ إِلَيْهِ نَكِرَهُمْ وَأَوْجَسَ مِنْهُمْ خِيفَةً ۚ قَالُوا لَا تَخَفْ إِنَّا أُرْسِلْنَا إِلَىٰ قَوْمِ لُوطٍ</div>
+<div class="pm">«Ellerinin ona uzanmadığını görünce (İbrahim durumdan) hoşlanmadı ve içine bir tür korku düştü. Dediler ki: “Korkma. Biz Lût kavmine gönderildik”.» (Hûd sûresi, 11/70)<span id="bookmarks-102"></span></div><span id="bookmarks-102"></span><a id="v9"></a>
+<div class="p">Sonra misafirler: “Eşin Sare nerede?” diye sorunca, İbrahim aleyhisselam yanıtladı: “Şurada, çadırın içinde”.<span id="bookmarks9"></span></div>
+
+<div class="s"><div id="s2">“GELECEK YIL SARE BİR OĞUL GÖRECEK”</div></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p">“Gelecek yıl bu zamanlarda geri döneceğim” dedi misafirlerden biri, “Geldiğimde karın Sare'nin oğlu olacak”. Bu sırada, Hz. Sare, Hz. İbrahim'in arkasında, çadırın eşiğinde sohbeti dinlemekteydi. <span class="va">(12 )</span> Misafirin lafını işitip, içinden güldü.<span class="footnote selectable" id="F-1"><sup>b</sup></span><span id="bookmarks10"></span> <a id="v11"></a>Çünkü hem kendisi hem de Hz. İbrahim çok ileri yaştaydı. Hz. Sare (r.a.) çoktan adetten kesilmişti.<span id="bookmarks11"></span> <a id="v12"></a>“Bu yaştan sonra bu sevinci tadabilir miyim?” diye düşündü, “Beyim de yaşlıdır...”<span id="bookmarks12"></span> <a id="v13"></a>Sonra Allah'ın elçisi melek, İbrahim'e (a.s.): “Sare neye güldü? Niye çocuğunun olacağına inanmadı?” dedi,<span id="bookmarks13"></span> <a id="v14"></a>“Rab için imkansız bir şey var mıdır? Gelecek yıl bu vakitlerde yine geleceğim. O zaman Sare'nin kucağında çocuğu olacaktır” dedi.<span id="bookmarks14"></span> <a id="v15"></a>“Gülmedim” dedi Sare anamız korkudan. Fakat o: “Hayır, güldün” dedi.<span id="bookmarks15"></span></div>
+
+<div class="s"><div id="s3">SEBEB-İ ZİYARET<span class="footnote selectable" id="F-2"><sup>c</sup></span></div></div><span id="bookmarks15"></span><a id="v17"></a>
+<div class="pm"><span class="it">“Yapacağım şeyi İbrahim'den mi gizleyeceğim?” dedi Allah,</span><span id="bookmarks17"></span> <a id="v18"></a><span class="it">“Ben onu, çocuklarına ve ev halkına adil ve sâlih amelleri öğretsin, doğru yolumda rehberlik etsin diye seçtim. Çünkü, ona verdiğim vaadimi tamamlayıp, ondan büyük ve kudretli bir halk yaratacağım, ve yeryüzünün bütün milletleri İbrahim'in vesilesiyle berekete kavuşturacağım.” </span><span id="bookmarks18-19"></span></div><span id="bookmarks18-19"></span><a id="v16"></a>
+<div class="p">Sonra misafirler yerlerinden kalkıp Sedum'a doğru yola koyuldular. Uğurlamak için peygamber de onlarla beraber gitti.<span id="bookmarks16"></span> <a id="v20"></a>İbrahim'e (a.s.): “Sedum ve Gomore'daki insanlar<span class="footnote selectable" id="F-3"><sup>d</sup></span> günah işlere batmış durumda. Zulümleri yüzünden feryat edenler arttıkça arttı.<span id="bookmarks20"></span> <a id="v21"></a>Bunun için varıp arşa erişen bu feryada bakacağız.” <span class="footnote selectable" id="F-4"><sup>e</sup></span><span id="bookmarks21"></span></div>
+
+<div class="s"><div id="s4">İBRAHİM'İN (a.s.) DUASI</div></div><span id="bookmarks21"></span><a id="v23"></a>
+<div class="p">“Ya Rab, sen kötülerle beraber sâlih kullarını da yok eder misin?” diye dua etti.<span id="bookmarks23"></span> <a id="v24"></a>“Eğer o yerde 50 sâlih kulun varsa, o şehri viran etmezsin. Değil mi?<span id="bookmarks24"></span> <a id="v25"></a>Kötülerin yanına sâlihleri de koyup helak etmezsin!? Ya rabbel âlemin, sen herkese adalet ile hüküm verirsin”.<span id="bookmarks25"></span> <a id="v26"></a>“Evet” dedi Allah, “Eğer Sedum'da 50 sâlih adam olsaydı, şehri viran etmezdim”.<span id="bookmarks26"></span> <a id="v27"></a>“Ya Rabbim, ben kulun hiçbir şeyim, ama konuşmama izin ver” dedi İbrahim (a.s.),<span id="bookmarks27"></span> <a id="v29"></a>“Eğer 40 sâlih adam bulursan?” diye sordu. “40 adam için şehri esirgerim” dedi Rab.<span id="bookmarks29"></span> <a id="v30"></a>“Ya Rab, öfkelenme ama 30 sâlih adam bulursan, ne yaparsın?” dedi. “30 adam hatırına orayı yok etmem” dedi Rabbi.<span id="bookmarks30"></span> <a id="v31"></a>İbrahim aleyhisselam: “Rabbim, cüretim için bağışla ama 20 sâlih adam bulursan?”. “20 adam için de yok etmem” dedi Allah (c.c.).<span id="bookmarks31"></span> <a id="v32"></a>Peygamber yine özür dileyerek “Eğer 10 tane bulursan ne yaparsın?” diye sordu. “O 10 tane sâlih insanın hatırına şehri yok etmem” diye cevapladı Rahman.</div>
+<div class="p"><span class="wh">فَمَا وَجَدْنَا فِيهَا غَيْرَ بَيْتٍ مِنَ الْمُسْلِمِينَ </span><span class="bdit">«Ne var ki, orada Müslümanlardan olan bir evden başkasını bulmadık.»</span> <span class="footnote selectable" id="F-5"><sup>f</sup></span><span id="bookmarks32"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>
