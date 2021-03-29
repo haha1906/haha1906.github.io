@@ -24,7 +24,7 @@ if (match) {
 	var b = match[1].toUpperCase();  // book code
 	var c = match[2];                // chapter
 	if (booksPresent.includes(b)) {
-		redirPage = folder + bookPrefix[b] + '-' + b + '-' + ('00' + c).slice(-3) + ".html"
+		redirPage = folder + "tri-" + bookPrefix[b] + '-' + b + '-' + ('00' + c).slice(-3) + ".html"
 	}
 }
 location.href=redirPage
