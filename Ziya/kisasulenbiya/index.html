@@ -10,7 +10,7 @@
 console.log("Hello world!");
 // SETTINGS: Adjust these for the current HTML Output, as hosted on a website.
 var folder = "";                    // Relative path to the HTML files.  e.g. "../web/"
-var redirPage = "tri-01-GEN-003.html";  // Path to default page if reference not found. e.g. "../web/01-GEN-000.html"
+//var redirPage = "tri-01-GEN-003.html";  // Path to default page if reference not found. e.g. "../web/01-GEN-000.html"
 var collectionPresent =                 // Specify the collection that are present
 	['tri', 'eni'];
 var booksPresent =                  // Specify the books that are present
@@ -33,7 +33,7 @@ if (match) {
 		console.log(location.search.substr(0, 6));
 		var d = folder + a + '-' + bookPrefix[b] + '-' + b + '-' + ('00' + c).slice(-3) + ".html"
 		console.log(d);
-		//redirPage = folder + a + '-' + bookPrefix[b] + '-' + b + '-' + ('00' + c).slice(-3) + ".html"
+		redirPage = folder + a + '-' + bookPrefix[b] + '-' + b + '-' + ('00' + c).slice(-3) + ".html"
 		console.log(redirPage);
 	}
 }
@@ -60,7 +60,7 @@ location.href=redirPage
 <body>
 <script type="text/javascript">
 <!--
-//location.href = 'eni-01-GEN-002.html';
+location.href = 'eni-01-GEN-002.html';
 // -->
 </script>
 <script type='text/javascript' src='./pwa-main.js'></script>
