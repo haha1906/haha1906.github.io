@@ -51,6 +51,7 @@ if (match) {
 		console.log(location.search.substr(0, 6));
 		redirPage = folder + a + '-' + bookPrefix[b] + '-' + b + '-' + ('00' + c).slice(-3) + ".html"
 		console.log(redirPage);
+		location.href=redirPage
 	}
 }
 console.log("hit");
