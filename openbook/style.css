@@ -35,7 +35,7 @@ body {
 }
 #flip #front, 
 #flip #front div {
-  background-image: url(img/Cor-Kapak.jpg);
+  background-image: url(https://haha1906.github.io/openbook/img/Cor-Kapak.jpg);
   box-shadow: inset rgba(255,255,255,0.3) 0px -1px 0 0,#35582C 0px 1px 0px 0px;
 }
 #flip #front > div > div > div > div > div > div > div > div > div > div { 
@@ -44,7 +44,7 @@ body {
 #flip #back { transform: rotateY(.4deg); transform-origin: -100% 0; } /* avoid pages overlap */
 #flip #back,
 #flip #back div {
-  background-image: url(https://play-lh.googleusercontent.com/i-lW6-D9bIIxyRDbSD5NLDg0K_Ezt5vB6Pfxyj2mU154SXxDAkhzVL_wI4DorSp4RtWH); 
+  background-image: url(https://haha1906.github.io/openbook/img/002.jpg); 
 }
 
 #flip > div {  left: 0;  background-position-x: 0; }
@@ -90,7 +90,7 @@ body {
 }
 #book #top {
   animation: book 6s ease-in-out infinite;
-  background: url(https://image.winudf.com/v2/image1/Y29tLnBheWdhbWJhcmxhci5xaXNzYXNpX3NjcmVlbl8zXzE1Nzg2MDUyMjZfMDIy/screen-3.jpg?fakeurl=1&type=.jpg);
+  background: url(https://haha1906.github.io/openbook/img/003.jpg);
   background-size: 100% 100%;
   background-position: 100%;
   box-shadow: inset rgba(0,0,0,0.2) 510px 0 50px -140px;
