@@ -35,7 +35,7 @@ body {
 }
 #flip #front, 
 #flip #front div {
-  background-image: url(https://assets.lulu.com/cover_thumbs/1/g/1ggrdr4q-front-shortedge-384.jpg);
+  background-image: url(img/Cor-Kapak.jpg);
   box-shadow: inset rgba(255,255,255,0.3) 0px -1px 0 0,#35582C 0px 1px 0px 0px;
 }
 #flip #front > div > div > div > div > div > div > div > div > div > div { 
